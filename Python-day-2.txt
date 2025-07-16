@@ -234,6 +234,139 @@ Methods
 2. upper()
 3. strip()
 
+Set
+---
+A set is an unordered, unindexed collection of unique elements
+
+elements are in random 
+it will now allow duplicates - duplicates willbe automatically removed
+it is a mutable element
+It allows all set operations 
+
+a set is rep in {}
+
+[] -->list
+() --> tubple
+{} --> set
+
+s = {1,2,3,4,5}
+type(s) --> Set
+
+
+Set() also we can create a set
+
+x = Set([1,2,3,4,5])
+type(x)
+
+x = Set()
+x = {}
+
+Methods in Set
+--------------
+
+1. add()-- adds an element to the set
+2. update() --- Adds multiple elements (from list, tuple etc)
+3. remove(x) --> remvoes an element from the set (it x doen't exists then
+it will raise error)
+4. discard(x) --> if x doesnot exist then it will not raise any error
+5. pop() --> removes and returns  a random element from the list
+
+6. clear() --> removes all elements from the set
+
+Set Operational Methods
+----------------------
+7. union()
+8. intersection()
+9. difference()
+10. symmetric_difference()
+11. issubset()
+12. isdisjoin()
+
+
+List, tuple, String, Set, 
+
+[]
+()
+{}
+" "
+
+Array -  a collection of items, ordered and indexed
+
+append()
+clear()
+copy()
+count()
+exted()
+index()
+insert()
+pop()--> removes the element based on index
+remove() -> remvoes the element on value
+reverse()
+sort()
+
+array
+
+import array
+
+x = array.array('i',[10,20,30,40])
+type(x)
+
+for i in x:
+	print(i)
+
+
+
+Functions and modules
+
+
+Dictionary (dict)
+-----------------
+
+Single dimensional data types or structures
+
+2023====>[10,21,8,11]
+2022====>[6,3,1,8]
+
+name1
+age1
+city1
+A disc
+
+emp = {
+"name":"praveen",
+"age":47,
+"location":"Hyderabad,
+
+}
+type(emp)---> dict
+
+Methods in Dict
+----------------
+
+1. get(key,default) =-  return value if key exists else returns default value
+
+emp.get('name1',"noting")--> noting
+
+2. keys() --> returns all the keys from the dict
+
+zip() method converts two lists into a dict
+
+
+keys = ["name","age","city"]
+values =["kumar",39,"Chennai"]
+data = dict(zip(keys,values))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
