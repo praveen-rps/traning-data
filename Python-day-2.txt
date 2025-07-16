@@ -1,0 +1,249 @@
+Loops - While() - condition - conditional based
+
+For - A for loop in python is used to iterate over a sequence(list,tuple,
+string,range) of items and exectue a block of code.
+
+counter based loop
+
+syntax:
+
+for variable in sequence:
+	statements;
+
+nums = [1,10,3,16,19] // list
+
+for x in nums:
+	print("Hello");
+
+
+Hello
+Hello
+Hello
+Hello
+Hello
+
+
+for x in nums:
+	print(x+1);
+
+2
+11
+4
+17
+20
+
+
+names = ["sunil","anil","kumar","satish","balu"]
+for x in names:
+	print(x)
+
+
+sunil
+anil
+kumar
+satish
+balu
+
+for x in names:
+	print(" Hello :"+x)
+
+Hello : sunil
+Hello : anil
+Hello : kumar
+Hello : satish
+Hello : balu
+
+
+for char in "Python":
+	print("Hello")
+
+Hello
+Hello
+Hello
+Hello
+Hello
+Hello
+
+for char in "Python":
+	print(char)
+
+P
+y
+t
+h
+o
+n
+
+x = range(1,10) // range(m,n) --->generates nums from m to (n-1)
+
+x = [1,2,3,4,5,6,7,8,9]
+
+for t in x:
+	print(t)
+
+// print numbers from 1 to 9
+
+
+
+for t in range(1,10,2):
+	print(t)
+
+Sequence Data Types:
+-------------------
+
+Sequence is  built in data type that stores multiple items in a specific order
+and allow elements to access using indexing and slicing
+
+LIST
+Tuple
+range
+str
+bytes
+bytearray
+
+
+LIST - is a builtin python data structure that stores an ordered collection of items
+lists are mutable and can contain diff data types;
+
+
+represented in []
+
+countries= ["India","Japan","China","America","Australia","Swedan","Norway","Germany"]
+		0	1	2	3	4	     5		6	7	
+
+countires[0] --> India
+countires[1] --> Japan
+countires[3] --> America
+countires[5] -->  RuntimeException
+
+countires[-1] ---> from the last first element --> America
+
+countires[n-1] = countires[-1]
+
+slice the list
+--------------
+
+countires[0:2] ---> ["India","Japan"]
+
+countires[0:5] ---> ["India","Japan","China","America","Australia"]
+
+countires[:3] ---> ["India","Japan","China"]
+
+countires[3:] ---> ["America","Australia","Swedan","Norway","Germany"]
+
+countires[-3:-1] ---> ["Swedan","Norway","Germany"]
+
+
+Methods in List
+----------------
+1. append() -- Append or add an element at the end of the list
+2. insert()
+3. extend()
+4. remove()
+5. pop()
+6. clear()
+7. index()
+8. count()
+9. sort() -- sort in the alphabetical order
+10. reverse()
+11. copy()
+
+products = ["Laptop", "Mobiles", "Chairs", "Books", "TVs", "Tables", "Boats"]
+Mobiles
+search = Bo
+
+data = [ p for p in products if search.lower() in p.lower()]
+	
+	
+
+Tuple
+-------
+It is a builtin data type in python which is an ordered and immutable collection
+of items
+
+1. Ordered ---> use index to retreive
+
+2. Immutable --> cannot modify the existing content
+
+3. Allows duplicates
+
+4. Iterable ---> traverse through the elements
+
+5. () -- Open parenthesis 
+
+mytuple = (10,20,30,40,50,60) ---> fixed
+mytuple[0] ---> 10
+mytuple[2] --> 30
+mytuple[4] --> RuntimeException
+
+mytuple[1]=40 // throw error
+
+mytuple[1:] ---> from index 1 to last --> (20,30,40,50,60,70)
+mytuple[:2] ---> from 0 to 2-1 --> (10,20)
+
+
+Methods
+-------
+count()---> find the number of times the given element is repeated
+
+t = (1,2,3,4,3,2,1)
+t.count(1) ---> 2
+t.count(4) ---> 1
+
+index() --> index position of the given element
+t.index(3) ---> 2
+
+
+student = "Raj",22,"ECE"
+
+
+String
+------
+
+str is a datatype which is a collection of all uni code characters
+
+string can represented with ' ' --> single quotes
+" " --> double qutoes
+""" """"  --> triple quotes
+
+
+str1="Hello" or str1 = 'hello'
+
+str1 = """This is a first line in python
+	this is the second ine in python"""
+
+Properties
+-----------
+1. Immutable
+2. Iterable
+3. Ordered
+4. suports slicing
+
+text = "Hello,python"
+text[0] --> H
+text[-1] --> n
+text[1,5] ---> ello
+text[::-4] --> Hello,pyt
+
+text[::-1] ---> reverse the string
+
+Methods
+-------
+
+1. lower()
+2. upper()
+3. strip()
+
+
+
+
+
+
+
+
+
+
+
+
+
+

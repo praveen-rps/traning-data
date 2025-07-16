@@ -1,0 +1,344 @@
+Python is a high level interpreted general purpose programming language.
+It was created by Guido Van Rossum - 1991
+
+Python code emphasizes 
+1. Code Redability
+2. Signicant Indentation
+3. multi programing pradigms ( Object-Oriented, Functional , Procedural)
+
+Python can be used for
+---------------------
+1. Web Development
+2. Data Science
+3. Machine Learning
+4. Automation of Scripts
+5. Application Developments(User Defined Applications)
+6. Gaming
+7. IoT
+8. Cyber Security
+9. BlockChain
+10. System Applications
+
+
+Key Features
+------------
+1. Simple syntax
+2. Interpreted
+3. Dynamically Typed
+	
+	int a;
+	a = 10;
+	a = "hello"; // compile time error
+
+   	t=10
+	t="Hello"
+4. cross platform
+5. Extnesive Libraries - Makes it easy to implemnet almost anything
+6. Open Source
+7. Community Support
+8. Embeddable and Extendable  -- Integrated with other program lang like C, C++
+
+Python vs other lang
+--------------------
+Feature				Python			Java
+Syntax - 			Simple and Readable	verbose
+Typing				Dynamic			Static
+Speed				Optimistic		Optimistic
+UserCase			Anything		Enterprise / Distributed
+Compilation			Interpreted		Compiled
+
+
+1. write the code just line by line to have it intrepred
+   CLI interpretor
+
+2. Write the series of code to have a script and then also execute
+   scripts - 
+   test.py ------> interpreted -----> output
+
+
+1991 ---> python v1
+
+2000 ---> python v2
+
+2008/ 2010 ---> python v3 python 3.x 
+
+
+Input and output statments
+-------------------------
+
+output --> print() --> print("Hello World..!"); 
+a=10
+b=20
+print(a)---> 10
+print(b) ---> 20
+print("a")---> a
+print('b')--> b
+
+print("The value of a is ",a) // The value of a is 10
+
+input() --> input statement to read the values from keyborad
+
+
+x = input("enter x value")
+y = input("enter y value");
+
+Type casting is the process of converting one datatype to antoher datatype
+
+Widing --> increaing the scope from lower to higher
+int ---> float 
+
+nararowing ---> decreasing the scope from higher to lower
+float --> int
+
+
+Types of typecasting methods
+---------------------------
+
+int() --> str to int
+float() --> str to float
+
+
+scanf("%d%d",&x,&y); ---> read only two integer value from keyboard 
+
+10 20
+
+x, y = input ("Enter two values")
+
+type() - used to check the data type of the variable
+
+a = "Hello"
+b = 10
+c =11.22
+d= {"Hello","hai"}
+e = ("Hello","hai")
+f = {"Hello":1, "hai":2}
+
+type(a) --> str
+type(b) --> int
+type(c) --> float
+type(d) --> list
+type(e) --> tuple
+type(f) --> dict
+
+
+amount = 150.75
+print("Amount is :${:.2f}".format(amount))
+Amount is : %150.75
+
+name = "Kumar"
+city = "Chennai"
+
+print(f"Hello, {name} welcome to {city}")
+
+Hello Kumar welcome to Chennai
+
+
+% Operator
+----------
+add= 10
+print("The value of a is %d", %add)
+The value of a is 10
+
+%d --> int
+%f --> float
+%s --> string
+%x --> hexadecimal
+%o --> octal
+
+Assignments
+-----------
+
+a = 10
+b = "hello"
+
+
+Chained Assignments
+
+x = y = z = 100
+
+x = 100
+y = 100
+z = 100
+
+Multiple Assignment
+
+a,b,c = 10, 20, 30
+
+a --> 10
+b --> 20
+c --> 30
+
+Elegant Swapping
+---------------
+a = 10
+b = 20
+
+a, b = b, a
+
+a --> 20
+b --> 10
+
+
+x = 10
+x += 2 ==> x = x+2
+-, / *, %, ** ---> true for all these operators also
+
+Packing and unpacking
+----------------------
+
+numbers = [10,20,30] -> list
+a, b , c = numbers 
+
+a --> 10
+b --> 20
+c --> 30
+
+numbers = [10,20,30,40]
+
+a, b, c = numbers
+
+
+Data types in  Python
+-----------------------
+The type of the data with which the programming lang will work/ support
+
+1. Numeric - int, float, complex (x +iy)
+
+(7 + 3j ) + (8- 4j) => (16 -j)
+
+2. Text - str
+  name = 'praveen'
+  name = "praveen"
+  name = """praveen""" // to represent a multi line string
+
+  feedback = """" this is the feedback
+		  given by the customers
+		  for their interaction in python """"
+	# this line will be comment
+	"""
+	this will be commented in python
+	"""
+
+3. Boolean - bool (true / false)
+
+4. sequence - list, tuple, range
+
+5. set - set, frozenset
+
+6. Maps - dict
+
+7. Binary - bytes, bytearray, memoryview
+
+8. None - none
+
+Control statements
+--------------------
+
+Those statements which will transfer the control one one part of the program
+to another part of the program
+
+1. conditional based - transfer the control based on the result of a condition
+ex> if, switch, loops
+2. unconditional based - transfer the control without checking any condition
+    break, continue, pass, return, exit()
+
+if Statement
+-------------
+
+blocks are presented by using {} 
+
+python block is represented by using 
+
+block is always represented using indentation
+
+(tab is not considered) 
+
+
+syntax 
+	if condition:
+		statements-1
+	statement-2
+
+a = 10
+if a < 10:
+	print("A is lesser than 10')
+print("After the if block")
+
+
+
+conditional Operators
+
+1. and
+2. or
+3. not
+
+Loop: 
+-----
+These are the statments which will execute the given set of statements 
+for the fixed number of times
+
+s1;
+s2;
+s3;
+s4;
+
+condition based -- conditional value -- while
+counter based -- incremental value -- for
+
+syntax:
+
+	while condtion:
+		statements
+	
+We should not enter into an infinite loop
+
+
+unconditional statements :which trasnfer the control without checking any condition
+while loop with continue statement
+
+continue will skip the iteration even though there are certain statements to execute
+
+s1
+s2
+s3
+continue
+s4
+s5
+
+i = 0;
+a = "python evas droppings"
+
+while i < len(a):
+	if a[i] == 'e' or a[i] == 's':
+		i += 1
+		continue
+	print(a[i])
+	i ++ 1
+	
+
+while with pass: pass is used to represent the empty body for methods
+, control statements, functions etc.,
+
+while conditon:
+	pass
+
+
+function display():
+	pass
+
+
+while with else:
+
+i = 1;
+while i <=5:
+	i +=1
+	print(i)
+else:
+	print("No Break")
+
+
+
+
+
+
+
