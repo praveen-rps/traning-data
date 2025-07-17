@@ -1,0 +1,17 @@
+Dict
+----
+(key,value) ---> Meta data
+
+Keys----> unique
+values --> duplicate
+
+
+student = {
+ "name":"kumar",
+ "age": 21,
+"city":"Chennai"
+}
+  
+
+student['name'] 
+student['age']
