@@ -31,7 +31,6 @@ THe application should:
 	d. Keep the data sorted / organized
 	f. Display all registered data wih their details
 
-
 List -- Student Data
 Tuple -- course details
 Set -- To keep track of registered courses
