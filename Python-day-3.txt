@@ -15,3 +15,36 @@ student = {
 
 student['name'] 
 student['age']
+
+
+
+UseCase: Student Course Registration System
+--------------------------------------------
+
+1. to register a student into a particular course
+2. Each course will have unique code, title and fee
+3. No student should register for the same course twice
+THe application should:
+	a. store the student data
+	b. calcualte the total fee for the courses registered
+	c. void duplicate courses
+	d. Keep the data sorted / organized
+	f. Display all registered data wih their details
+
+
+List -- Student Data
+Tuple -- course details
+Set -- To keep track of registered courses
+Dict -- Complted processed data
+
+
+
+
+
+
+
+
+
+
+
+
