@@ -36,11 +36,78 @@ Tuple -- course details
 Set -- To keep track of registered courses
 Dict -- Complted processed data
 
+Functions 
+---------
+These are the sub programs or program segments which will perform
+a specific task.
+
+These are helpul in modulartity
+
+useful in reusability
+
+print("Hello") --> printed on the console
 
 
 
+Logical ------> physical
 
 
+Hello
+s1
+s2
+s3
+s4
+s5
+s6
+
+
+Hai
+s1
+s2
+s3
+s4
+s5
+s6
+
+A function is a named set of statements
+
+f1()
+s1
+s2
+s3
+s4
+s5
+
+
+;
+;
+;
+;
+s1000
+
+
+1. system defined functions or predefined -- Prog lang
+
+2. user defined functions
+
+
+ncr ---> n! / r! * (n-r)!
+
+
+syntax:
+
+def function_name(parameters):
+	body of the function
+	[return value]
+
+
+1. function without return type and without paramaters
+
+2. functions with parameters without return type
+
+3. functions without parameters with return type
+
+4. functions with parameters and with return type
 
 
 

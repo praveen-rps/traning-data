@@ -1,0 +1,85 @@
+Exception Handling
+------------------
+
+Exceptions are run time errors
+
+The process of handling the run time errors is called exception handling
+
+1. compile time errors --> at time of compilation
+2. Runtime errors  ------> found only in execution
+
+
+int a, b, c;
+
+c = a/b;
+
+print(c);
+
+a = int(input("Enter a nmber"))
+
+
+fp = fopen("F1.txt","r")
+while(!fp)
+	print(fp.read())
+
+
+try:
+	// all the code which is suppose to get exeception
+except: 
+	// exception handling code
+finally
+	// mandatorly execute whether exception is raised or not
+
+
+
+try:
+	s1
+	s2
+	s3----> Runtime Error, abrupts terminates--->
+		comes out of program execution
+	s4
+	s5
+	s6
+except:
+	e1
+	e2
+	e3
+finally:
+	f1
+	f2
+
+s7
+s8
+s9
+continue
+
+try:
+	open a file
+	read the contents---->exception
+	modify the contents  // KeyError
+except ZeroDivisionError:
+	some code to handle it	
+except FileError:
+	re open the file
+	modify the contents
+	
+finally:
+	close the file
+
+--> nt continue
+
+Predefined exceptions
+---------------------
+
+1. ZeroDivisionError
+2. TypeError
+3. ValueError
+4. IndexError
+5. KeyError
+6. FileNotFoundError
+7. NameError
+
+
+
+
+
