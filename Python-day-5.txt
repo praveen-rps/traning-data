@@ -1,0 +1,125 @@
+Command Line Arguments
+----------------------
+The arguments / input data passed to the program at command line
+
+input to the python script
+
+input()---> to read the values from the input sources
+
+Automation of tasks
+
+program > program2 > program3 
+
+easily integrate this with CICD pipe
+
+Reusability 
+
+
+import sys
+
+
+sys.argv
+
+
+c:/>test 10 20 30 
+
+argv = [10,20,30]
+
+sys.argv[0]--> 10
+sys.argv[1]--> 20
+sys.argv[2]--> 30
+
+Files
+------
+A file is a named memory space to store large set of data permanently
+
+
+variables ---> store data ---> volatile -- stored in primary memory
+
+
+
+A file is stored and retrieved from a secondary memory
+
+
+
+Data flows
+-----------
+1. From a hardware(keyboard) to file
+
+2. from a file to hardware(monitor)
+
+3. file(read) to file(write)
+
+
+Basic file Operations
+--------------------
+1. Read - r 
+2. Write - w
+3. Append - A
+4. Read and Write - r+
+5. Binary b 
+
+
+open file ---> open(filename,mode)
+		fp=open("f1.txt","r")
+		fp.read()
+close file ---> fp.close()
+f1.txt
+------
+This is python programming
+This is a special purpose lang
+This can also be used for microservices
+This can also be used for datascience
+
+
+File Object Methods
+--------------------
+1.open() --> Method is used to open the file for specific purpose
+2.close() ---> close the file 
+3. read() ---> Reads entire file contents into a single string
+
+4. readline() --> reads one line at at time
+fp.readline()--> This is python programming
+fp.readline()--> This is a special purpose lang
+
+
+5. readlines() --> returns all the lines in the form of a list
+data = fp.readlines()--> 
+["This is python programming","This is a special purpose lang",
+"This can also be used for microservices",
+"This can also be used for datascience"
+]
+
+data[0]--> This is python programming
+data[1] --> This is a special purpose lang
+
+number of elements in list  =  number of lines
+len(data) --> number of lines
+
+6. write(string) ---> write a string to file
+open the file either in write or append or read&write
+
+fp = open("f1.txt","w");
+fp.write("string")--> will be written to the file
+
+7. writelines(list)--> writes the list as lines in the file
+
+fp.writelines(data)
+
+8. seek(offset) ---> moves the file pointer to the given offset
+
+9. tell() --> get current file pointer location
+
+
+
+
+
+
+
+
+
+
+
+
+
+
