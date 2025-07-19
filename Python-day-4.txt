@@ -70,7 +70,7 @@ finally:
 
 Predefined exceptions
 ---------------------
-
+Parent: Excpetion
 1. ZeroDivisionError
 2. TypeError
 3. ValueError
@@ -78,6 +78,121 @@ Predefined exceptions
 5. KeyError
 6. FileNotFoundError
 7. NameError
+
+
+balance = 990 
+
+def f():
+	statements
+
+
+age = 40000
+
+Custom Exceptions (or) user Defined exceptions
+
+created by user  ---> class def to create the exception
+conditional check should also be done by user --> conditions to check
+throw the exeption also by user ---> raise
+
+
+1. we have to crate a class which will inherit from parent
+
+class InvalidAgeException(Exception):
+	def __init__():
+	 	super.message("Age cannot be less than zero or greater thann 100")
+
+
+class InsufficientFundsError(Exception):
+	def __init__():
+		super.message("funds are not sufficient")
+
+
+class NegativeAgeError(Exception):
+	def __init__():
+		super.message("Age canot be negative")
+
+Modules
+--------
+A module in python is python file with .py extension that contains
+classes, variables, methods that can be reused, by using import statements
+
+
+Pre defined Module - already defined by python and ready to use
+ex> math, random, os, datetime, re, 
+
+import math
+
+math.sqrt(16) --> 4
+pow(2,3)---> 8
+pi---> 3.1413
+
+
+
+
+os Module
+---------
+
+import os
+
+os.getcwd() ---> current working directory
+os.chdir(path) -->change the directory
+os.listdir(path) --> list files and directories in the given path
+os.makedir() --> create directory
+os.rmdir() --> remove the directory
+os.remove(file) --- delete a file
+os.path.exists(path) --> check if the file or direc exits --> T/F
+os.path.isdir() --> to check it is dir or not
+os.path.isfile() --> to check it is a file or not
+
+Env Module
+-----------
+This is environment module which will have all env related methods
+
+import os
+os.environ --> env variables as directory
+
+
+user defined module
+-------------------
+Advantages of Modules
+
+1. code reusablity
+
+2. Better Orgnization
+
+3. Improve readability
+
+4. namespace seperation
+
+5. Testing 
+
+Diff ways' to import a module
+------------------------------
+
+1. import module_name --> imports entire module in the current file
+    import savings
+    import loans
+
+
+2. import module_name as alias
+   import savigns as s
+    s.deposit(1000)
+    s.withdraw(400)
+   import matplotlib as plt
+   plt.draw()
+
+3. from <modulename> import func1, func2,pi etc
+   from savigns import deposit,withdraw
+
+4. from module import * (not recommeded)
+
+
+Package
+-------
+It is a collection of modules (.py files)organized in directories 
+
+that help group related code together
+
 
 
 
