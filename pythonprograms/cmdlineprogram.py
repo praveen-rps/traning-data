@@ -1,5 +1,5 @@
 import sys
-
+import ast
 def greeting(name):
     print("Hello ",name, "Welcome to Python")
 
@@ -18,5 +18,8 @@ if __name__ == "__main__":
         else:
             greeting(sys.argv[1])
             maths(int(sys.argv[2]), int(sys.argv[3]))
+            data = ast.literal_eval(sys.argv[4])
+            for i in data:
+                print(i)
     except Exception as e:
         print("The exception caught is : ", e)

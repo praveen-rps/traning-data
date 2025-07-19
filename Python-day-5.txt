@@ -110,6 +110,19 @@ fp.writelines(data)
 
 9. tell() --> get current file pointer location
 
+fp = open("filename","mode")
+fp.close()
+
+
+
+with open("filename","mode") as fp:
+
+
+
+fp.close() --> not required when created using with
+
+
+
 
 
 
