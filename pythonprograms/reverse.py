@@ -1,3 +1,4 @@
+import sys
 def reverse_number(n):
     rev = 0
     rem = 0
@@ -8,5 +9,5 @@ def reverse_number(n):
     return rev
 
 if __name__ == "__main__":
-    x = int(input("Enter a number: "))
-    print(reverse_number(x))
+   #x = int(input("Enter a number: "))
+    print(reverse_number(int(sys.argv[1])))
