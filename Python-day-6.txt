@@ -2,3 +2,30 @@ Excel format
 
 
 openpyxl --> helps in working with excel sheets / workbooks
+
+csv ---> write to excel
+
+excel ---> write to csv
+
+excel / csv / database ----> clean the data (Pandas to clean the data) ----> excel / csv /database
+
+ETL (Extranction - Transformation - Loading) -- BigData - Hadoop
+
+Create one raw excel file with 
+htno, name, m1,m2,m3, total, avg with rows with improper data
+1. no htno for some rows
+2. name is null
+3. m1 or m2 or m2 > 100 or <0
+4. total is not equal to m1+m2+m3
+5. avg is not equal to total/3
+
+
+Clean the above with following conditions
+
+1. if htno is empty or null or improper discard complete row
+2. if name is empty of null or impropre replace this with student
+3. if m1 or m2 or m3 > 100 or < 0 discard the complete row
+4. if total is not equal to actual total then cal the total and update the filed
+5. same for avg
+6. if any row has more than one data issue discard the complete row
+
