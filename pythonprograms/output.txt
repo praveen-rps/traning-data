@@ -1,0 +1,6 @@
+Java is object oriented language
+Java is now functional oriented language also
+Java can be used for many other frameworks to implement
+Spirng is written using java
+Springboot is also drawn from spring
+Andriod is also written using Java
