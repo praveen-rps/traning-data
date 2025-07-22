@@ -29,3 +29,156 @@ Clean the above with following conditions
 5. same for avg
 6. if any row has more than one data issue discard the complete row
 
+
+General puropse programming lang - Proedure, Object Oriented, functional
+and scripting
+
+Object oriented is the way of making the programable element as if
+it behaves like a real time entity
+
+
+class --> collection of objects having the same property
+Object --> instance of the class
+class ---> Variables and methods
+
+
+Java
+----
+
+class classname{
+
+	// list of variables
+	// list of methods
+
+}
+
+In python,
+
+class <classname>:
+	pass
+
+
+class Person:
+	pass
+
+
+class Test:
+	x=10
+	y=20
+
+objectname = classname()
+obj = Test()
+print(obj.x+" " +obj.y)---> 10 20
+obj2 = Test()
+print(obj2.x+" " +obj2.y)---> 10 20
+
+
+
+class Employee:
+	name = "praveen"
+	dept = "finance"
+
+emp1 = Employee()
+emp2 = Employee()
+
+print(emp1.name+"  "+emp1.dept)
+print(emp2.name+" " +emp2.dept)
+
+constructor - 
+1. used to initialize objects
+2. used to intialize the state and values during object creation
+3. creating a new object
+
+constructors are used to declare / execute any mandatory functions to be executed
+when the objects are created
+
+class Employee:
+	def __init__(self):
+		self.name="Praveen"
+		self.dept="Finance
+
+emp1 = Employee()--> 
+emp2 = Employee() -->
+
+class Employee:
+	def __init__(self,name,dept):
+		self.name=name
+		self.dept=dept
+
+emp1 = Employee("Praveen","Hr");
+emp3 = Employee()--> Error
+emp2 = Employee("Kumar","finance");
+
+
+
+    
+	
+def calArea(self):
+	self.area = 10;
+
+inside the class there are three diff types of variables
+1 instance variables -- > belong to class level and represent the data 
+2. method variables ---> variables to method level 
+3. static variables ----> which are also class level but common data-->
+same memory space for all the objects
+
+
+Access Specifier
+-----------------
+
+public:
+
+private: __ (double underscore) -- These private are useful only within the
+class
+
+protected: _(single underscore)--These are protected , only accessible within the
+class and inherited classes
+
+
+Inheritance
+------------
+the process of acquiring the properties from one class to another class
+
+1. Reusablity
+
+
+class Box2D:
+	def __init__(self):
+		self.length=10;
+		self.breadth=12
+	def surfacearea(self):
+		print("The area is :",(self.length * self.breadth)
+
+Box3D = Box3D + Box2D
+
+class Box3D(Box2D):
+
+	def __init__(self):
+		self.height=5
+	
+	def volume(self):
+		print("The volume is :", (self.length*self.breadth*self.height))
+
+box1 = Box3D()
+box1.surafacearea()
+box1.volume()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
