@@ -1,0 +1,196 @@
+Python is Object Oriented Programing
+
+class Person extends Object{
+
+	// variables
+	// methods
+
+}
+
+In Java base class for all classes in Java --->Object
+
+
+Base class for all classes in Python  - Object
+
+class Person:
+     def __init__(self):
+	self.name="Kumar"
+	self.desg="Manager"
+	self.dept="Finance"
+     def  procesSalary(self):
+	#logic for processing
+
+
+methods in Object class
+------------------------
+
+1. __init__() ---> constructor to initialize the instance varibles
+
+2. __str__() -----> to make user readble string format for the print object
+
+
+3. __eq__() ----> used to comapre the two objects
+
+
+Set ---> {} --> Stored in unorded, random access and unique , mutable
+List---> [] --> stores in order, sequential access and allow duplicates, mutable
+tuple--> () --> stores in order, sequential access and immutable
+dict --> {(k,v)}--> collection of key,value pairs, where key is immutable, values
+are mutable
+
+class Employee(Object):
+	def __init__():
+		self.name="Raj"	
+		self.dept ="Finance"
+	def __str__():
+		return f"Name is :{self.name} and Dept is :{self.dept}"
+	def __eq__(self,emp):
+		if isinstance(emp,Employee):
+			return emp.name == self.name and emp.dept == self.dept
+		return false
+	def __hash__(self):
+		return 1000001;
+
+	def __repr()__:
+		return f"developer friendly messages for debuggin"	
+
+emp1 = Employee()
+print(emp1)--------------->
+emp2 = Employee()
+print(emp2)--------------->
+
+
+Two diff objects 
+
+
+nums = [1,2,3,4,5]
+type(nums)--> list
+
+employees = [emp1,emp2]  # Allowed
+print(employees)
+
+employees = (emp1,emp2)  # Allow
+print(employees)
+
+employess = {emp1,emp2}  # Allows 
+str1 ="Python"
+str2="Python"
+data = {str1,str2}
+print(data)
+
+print(employees)
+
+Overriding --> It is the process of supressing the base class methods in dervied class
+when both are having the same signature
+
+
+
+1. instance variables --For every object individual memeory will be allocated
+
+2. class variables
+
+3. static variables
+
+4. Method variables
+
+
+
+Regular Expressions
+--------------------
+
+str1 = Wipro
+str2 = Wipro Tech
+str1 == str2
+
+
+
+xyz@wipro.com
+
+
+
+META CHARACTERS
+---------------
+[] -- a set of characters - [abc] ---> any one single character ---> a or b or c
+   z -->false
+[a-z] any one single character from a to z ---> a or b or c or ... z
+[A-Z] ---> ANY ONE single character fROM TO A TO Z
+
+. SINGLE CHARCATER OF ANYTHING 
+^ --> STARTS WITH
+$ --> ENDS WITH
+* --> ZERO  OR MORE
++ --> ONE OR MORE
+{} --> EXACTLY 
+{3,5}---> min 3 and max 5 --
+{3,} ---> min 3 and no limit on max
+{5} ---> exactly 5 
+| --> EITHER OR
+? = arleast
+
+() --> CAPTURE GROUP
+
+SPECIAL SEQUENCES
+----------------
+
+\d -- any number of digits
+\w -- an word any alphabet or any number and underscore
+[a-zA-Z_0-9] == \w
+\W == does not contain any word
+\s string with white spaces
+
+
+re -- regular expression
+import re
+
+
+Methods in python
+-----------------
+
+match()-- matches the pattern at the begining of the string
+
+search() -- matches the pattern anywhere in the string
+
+findall()-- return all on overlapping matches
+
+finditer() -- return iterator yielding matchobjects
+
+sub() -- subsitutes matches with another string
+
+split() --split the string based on pattern
+
+pattern = any stirng stats with A and ends with A is valid string
+valid strings --> A, ABCA, AA, A1234A, ABDC(INVALID), AB123(INVALID), 4321AA (INVVALID)
+
+pattern = "^A.*A$"
+str = "AABCA"
+
+str.match(pattern) ---> true
+str.search(pattern) --->true
+
+str = "the test expression ABCCAA is to be tested"
+str.match(pattern) -->false
+str.search(pattern) --> True
+
+
+email - @wipro.com
+
+john.kumar@wipro.com
+praveen.kumar@gmail.com ----> invalid
+
+pattern = r"^[\w\.]@wirpo\.com$"
+
+
+
+Password must be min 5 and max 10
+one upper case, one lower case, one digit, one alphnumeric charcater
+
+^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)([$#@]){5,10}$
+
+
+
+findall()
+split()
+
+string = "python is a best object oriented lang, and python is best too"
+
+
