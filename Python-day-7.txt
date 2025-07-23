@@ -192,5 +192,21 @@ findall()
 split()
 
 string = "python is a best object oriented lang, and python is best too"
+=
+To read a file and count the number of words, numbers and speical char's inside
+
+group() --> Returns the actual matched string
+start() --> returns the first match
+end() --> returns the last index of the match
+
+
+group(0) --> entire match
+group(1) --> first group
+group(2) --> second group
+
+Span()-- it returns the same start and end of the matching string, when 
+we compare by using search(), match(), finditer() in the tuple format
+
+
 
 
