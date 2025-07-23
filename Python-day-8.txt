@@ -91,15 +91,101 @@ it = iter(obj)
 for i in it:
 	print(i)
 	
-
-
-
-
-
-
 4. decorators
 
+A Decorator is a function that takes another function as input, adds some
+functionality to it and returns as a new function - without modifying the original
+functions code
+
+@decorator
+
+def my_decorator(func):
+	def test():
+		print("Before function calls")
+		func()
+		print("After functionl calls")
+	return test;
+
+
+@my_decorator
+def hello():
+	print("Hello")
+
+
+hello()
+
+
+Before function call
+Hello
+Afer function call
+
+Decorators are used in async calls or async communication
+
 5. lambda functions
+
+A lambda function is a small anynomous function defined usugin lambda
+which are in one line and returns a value
+
+--> To Make the lang a functional lang
+--> Parallel processing
+
+
+
+for i in range(1,100):
+	if x%i == 0:
+		list.append(i)
+
+1Ms
+
+syntax:
+
+lambda arguments : expression
+
+(lambda x,y : x*y)(10,20)---> 200
+
+prod = (lambda x,y : x*y)
+prod(10,20)---> 200
+
+square = lambda x : x*x
+print(square(4))--> 16
+
+iseven = lamdba x : x%2==0
+isodd = lambda x : x%2!=0
+
+max = lambda a,b : if a>b a else b
+max(10,20)--> 20
+max(-1,0)--> 0
+
+names = ["john","alex","charlie","marry"]
+sortnames = sorted(names, lamdbaexpression)
+
+lambda x : len(x) 
+sortnames = sorted(names, key = lambda x : len(x))
+
+
+nums = [1,2,3,4,5,6,7,8,9,10]-->2,4,6,8,10,...20
+map() --> used to apply a function to the collections of values
+lambda x : x*2
+twicenos = list(map(lambda x : x*2),nums)
+
+filter() --> used to apply a condition to the collection of values and collects
+all satisfied values
+
+evenos = list(filter(lambd), nums)
+p = lambda x : x%2 == 0
+evenos = list(filter(p), nums)
+
+reduce() --> used to apply the result of  previous method will be used as input for the 
+method in the next iteration
+
+
+sum = reduce(lambda x, y : x+y, nums)
+print(sum)
+
+
+
+
+
 
 
 Database Connectivity
