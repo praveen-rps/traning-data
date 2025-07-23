@@ -217,6 +217,57 @@ update
 3. create
 4. delete
 
+productcontroller.py
+class ProductController:
+	def addProduct(self):
+		pass
+		# code to read product data from key board 
+	def displayProducts(self):
+		pass
+		# code to display the data on the console
+		call the service method to get the dat 
+		write the code to display
+	def searchProducts(self):
+		pass
+	def deleteProducts(self):
+		pass
+
+
+productservice.py
+class ProudctService:
+	def addProduct(self):
+		pass
+		# call the dao layer method to perform add product
+	def displayProducts(self):
+		pass
+		# call the dao layer method to perform displayproduct
+	def searchProducts(self):
+		pass
+		# call the dao layer metods
+	def deleteProducts(self):
+		pass
+		#call the dao layer methods
+
+
+productdao.py
+	def addProduct(self,product):
+		pass
+		# write the database connectivity code to add product
+	def displayProducts(self):
+		pass
+		# write the db conn code to get all the productr
+
+		data = cursor.fetchall()
+		return data
+	def searchProducts(self):
+		pass
+		# call the dao layer metods
+		retur item
+	def deleteProducts(self):
+		pass
+		#call the dao layer methods
+		return true/false
+
 
 
 
