@@ -183,14 +183,6 @@ sum = reduce(lambda x, y : x+y, nums)
 print(sum)
 
 
-
-
-
-
-
-Database Connectivity
----------------------
-
 finditer() - used to find all non overlapping mataches of a pattern in the string.
 findall()--->list of strings
 
@@ -201,3 +193,38 @@ each iterator will return one match object
 start()
 end()
 group()
+mysql -- mysql.connectory
+oracle --cx_Oracle
+
+
+Database  Connectivity
+-----------------------
+1. Establish a database connection
+update 
+2. create the cursor
+
+3. execute the queries
+
+4. get the result and process it
+
+5. close the cursor and connection
+
+
+
+1. select command
+2. update 
+3. insert 
+3. create
+4. delete
+
+
+
+
+
+
+
+
+
+
+
+
