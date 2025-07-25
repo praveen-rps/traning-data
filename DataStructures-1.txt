@@ -1,0 +1,29 @@
+Data Structures
+----------------
+
+A data structure is a triod which deal with the type,range and operations
+
+A data structure is all about how a data can be stored and accessed in diff structures
+
+A ds is a way to store and retrieve the data
+
+Algorithm - A set of step by step instructrions to solve a specific problem
+
+Data Structure - A way of organizing and retreiving the data
+
+Linear Data Structure -- If the data is arranged in sequence, one after the other
+Non linear DS - If the data is in random / if it has more than one path to reach
+
+Time Complexity -- It is the measure of the amount of time an algorithm take
+to run, depending on the amount of data 
+
+Space Complexity - Measure of the amount of space required by the algorithm to store 
+and work
+
+Big O Notation -- It is a mathematical notation that describes the limiting behaviour
+of a function.
+
+
+
+
+

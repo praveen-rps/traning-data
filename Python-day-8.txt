@@ -248,7 +248,6 @@ class ProudctService:
 		pass
 		#call the dao layer methods
 
-
 productdao.py
 	def addProduct(self,product):
 		pass
