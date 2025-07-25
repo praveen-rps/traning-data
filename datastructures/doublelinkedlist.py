@@ -45,6 +45,36 @@ class DoubleLinkedList:
             temp = temp.prev
         print("None")
 
+    def delete_data(self,key):
+        if self.head is None:
+            print("List is empty")
+            return
+
+        temp = self.head
+
+        if temp.data == key:
+            if temp.next:
+                temp.next.prev = None
+            self.head = temp.next
+            temp = None
+            return
+
+        while temp and temp.data != key:
+            temp = temp.next
+
+        if temp is None:
+            print("Node or data not found")
+            return
+
+        if temp.next:
+            temp.next.prev = temp.prev
+
+        if temp.prev:
+            temp.prev.next = temp.next
+
+        temp = None
+
+
 
 if __name__ == "__main__":
     dlist = DoubleLinkedList()
@@ -54,3 +84,5 @@ if __name__ == "__main__":
     dlist.insert_at_end("Dotnet")
     dlist.display_forward()
     dlist.display_backward()
+    dlist.delete_data("Dotnet")
+    dlist.display_forward()

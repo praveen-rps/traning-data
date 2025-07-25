@@ -25,6 +25,12 @@ Types of Linked Lists
 1. single linked list ---> We can traverse only in the forward direction
 
 2. double linked list --> We can traverse in either direction
+applicaitons
+1. Browser history navigation
+2. Undo and Redo
+3. Music Player playlist
+4. Navigation of Images
+5.Memory management
 
 
 3. circular linked lists ---> last element is binded with first element to form 

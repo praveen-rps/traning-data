@@ -29,6 +29,7 @@ class LinkedList:
                 print(current.data , end = "->")
                 current = current.next
 
+
     def search_list(self, key):
         current = self.head
         found=False
