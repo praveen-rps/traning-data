@@ -1,0 +1,36 @@
+Data Structures
+
+1. Linear DS -- Where the arrangement of data is linear - There will be 
+   a link from one element to another element in the structure -- they are
+   accessible 
+
+   Examples> Arrays (Lists), Linked Lists, Stack, Queue
+  data locations are continous 
+  linked list the data locations are not continous
+
+2. Non Linear DS --The data arragement is not in linear fashion
+   examples > Tree and Graphs
+
+
+   
+Applications of Linked Lists
+
+1. stacks, queues, graphs
+
+
+Browser History ---> 
+
+Types of Linked Lists
+
+1. single linked list ---> We can traverse only in the forward direction
+
+2. double linked list --> We can traverse in either direction
+
+
+3. circular linked lists ---> last element is binded with first element to form 
+a circle
+
+
+
+Operations
+-----------
