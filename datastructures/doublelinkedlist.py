@@ -6,8 +6,13 @@ class DoubleLinkedList:
         self.head = None
 
     def insert_at_beginning(self,data):
+        if self.head is None:
+            print("The list is empty  and it the only insert")
+
         new_node = Dnode(data)
         new_node.next = self.head
+        self.head.prev = new_node
+        self.head = new_node
 
         if self.head is None:
             self.head = new_node

@@ -36,6 +36,11 @@ applicaitons
 3. circular linked lists ---> last element is binded with first element to form 
 a circle
 
+1. round robin cpu scheduling
+2. Multiplayer games
+3. Token passing in networks
+4. DS Heap Implementation and Deque 
+
 
 
 Operations
