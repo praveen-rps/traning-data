@@ -1,6 +1,34 @@
 Stack - Array, Linked List
-Queue - Array, Linked List
+LIFO - Last-In-First-Out : to guranetee the last element only removed from the
+structure
 
+Opertions
+---------
+1. push() --> to insert the element to the bottom
+2. pop()---> to remove the last element
+
+Queue - Array, Linked List
+FIFO - First-In-First-Out : to gurantee the first element is processed first
+
+elements insert at rear end
+elements are deleted / removed from the front end
+
+Operations
+----------
+
+1. insert()
+2. remove()
+3. search()
+4. display()
+
+
+1. Priority Queue   -- Max Priority, Min Priority
+2. Dequeue          -- Double Ended Queue - insert / delete can be performed at
+   either ends
+
+3. Circular Queue   -- Linked List
+
+Implemnets using - Arrays, Lists, Linked Lists
 Algorithms
 ----------
 1. Linear search 
@@ -14,3 +42,137 @@ Non Linear Structures
 ----------------------
 1. Tree - Traversal Operations
 2. Graph - Traversal Operations
+
+
+
+
+1.function call management ( Recursion)
+
+if n ==1 or n==0 return 1
+ fact(n ) = n * fact(n-1) 
+
+n * (n-1 ) * (n-2) * (n-3) * (n-4) * .......(n-n)
+
+
+2. syntax prasing in compilers
+
+   ((a*b) - (c%d)-(a)*%47^)(
+
+	lexical 
+
+3. Undo on Editors 
+
+4. Memory managemnet
+
+5. DFS, BFS
+
+
+
+data = [10,20,30,40,50]
+
+insertbefore(10,100)--> [100,10,20,30,40,50]
+insertafter(10,100) --> [10,100,20,30,40,50]
+
+insertbefore(30,100)--> [10,20,100,30,40,50]
+insertafter(30,100)--> [10,20,30,100,40,50]
+
+Complexity 
+
+Runtime
+--------
+
+1. programing lang we have used
+2. how the programmer writes the code
+3. the compiler or interpretor using
+4. hardware of the computer
+5. ops of he computer and its other tasks
+6. amount of data that program occupies
+
+
+Two types of complexities:
+1. Time Complexity --Is the number of operations needed to run an alogirthm / program
+on large amounts of data
+
+
+ 2 to (n-1) ----> 
+
+2----> 1
+4 ---> 2
+9 ---> 3
+100 --> 10
+
+10000--> 100
+
+1. O(1) ---> for any number of values it takes the same time to complete all 
+              operations
+
+2. O(n2) ----> for small change in the input values, the time will increase
+              drastically
+
+3. O(n)  ------> It is linearly changing as per the value of n
+
+4. O(n logn n) ---> It is logarthimic exponentation
+
+
+Best ----------> 
+Average ------->
+Worst Case ----> 
+
+
+8,16,19,15,2,17,4,11,6,1,7,14,5,3,9,12,14,20,18,10
+
+BubbleSort   
+Merge Sort
+Quick Sort
+Bucket Sort
+Insertion Sort
+Selection Sort  --- O(n2)
+
+
+
+1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+
+2. Space Complexity
+
+
+8,16,19,15,2 ---> Bubble Sort ---> 9 comparisions
+
+2,16,19,15,8----> 4
+
+2,8,19,15,16 ---> 3
+2,8,15,19,16 ---> 1
+2,8,15,16,19 ---> 1
+
+2,8, 15, 16,19 ----> 4,3,2,1 --> 10
+
+
+
+8,16,19,15,2,17,4,11
+
+2,16,19,15,8,17,4,11 ---> 4+7+2+3+5+1+2+4+1+4+5+4+1+4+3+3+2+1+
+2,15,19,16,8,17,4,11 
+2,8,19,16,15,17,4,11
+2,8,16,19,15,17,4,11
+2,8,15,19,16,17,4,11
+2,8,15,16,19,17,40,11
+2,8,11,16,19,17,40,15
+2,8,11,15,19,17,40,16
+2,8,11,15,17,19,40,16
+2,8,11,15,16,19,40,17
+2,8,11,15,16,17,40,19
+2,8,11,15,16,17,19,40
+
+O(n2)  ----> 
+
+Best Case --> Already sorted ---> O(n)
+Average and Worst ---> O(n2)
+
+
+2,8, 15, 16,19 - 5 --->n ---> worst
+
+O(n) ---> Worst case for linear search
+O(1) ----> best case for linear search
+O(n) ---. Average case for linear search
+
+
+
