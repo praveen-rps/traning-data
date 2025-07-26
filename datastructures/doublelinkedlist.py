@@ -1,4 +1,4 @@
-from DNode import Dnode
+from dnode import Dnode
 
 
 class DoubleLinkedList:
