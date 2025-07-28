@@ -1,0 +1,188 @@
+Arrays, Linked Lists, Stacks and Queues ---> Linear Structure
+
+1. Searching ---> Linear Search -- > not suitable when large set of data exists
+
+2. Sorting  ----> Bubble Sort or Exchange Sort
+
+
+Divide and Conquer Method
+-------------------------
+
+Divided and find the solution to it
+
+finally conquer it, combine to get the final solution
+
+
+1. Binary Search  - Prerequisite: All the elements must be in sorted order
+
+(i)
+data = [1,6,9,11,24,36,45,80]
+key=45
+midelment < key  (11 < 45)
+
+data = [24,36,45,80] 
+midelement < key ( 36 < 45)
+
+[45,80]
+midelement == key ( 45 == 45)---> element found
+
+(ii)
+data = [1,6,9,11,24,36,45,80]
+key=6
+midelment < key  (11 >  6)
+
+[1,6,9]
+midelemet == key (6 == 6)
+
+
+(iii)
+data = [1,6,9,11,24,36,45,80] 
+Key = 100
+
+complexity -->
+
+Bestcase --> O(1)
+Average or Worst case -->O(log n)
+
+
+
+11 < 100
+36 < 100
+
+45 < 100
+
+80 < 100
+Search element is not found
+  
+
+2. Quick Sort -- Divide and Conquer Method
+data = [7,2,1,6,8,5,3,4]
+
+Pivot element is chosen as middle element = (0+7) //2 == data[3]= 6
+
+we have to split elements wrt to 6 all leftvalues in one side and
+all right values in other side
+
+[7,2,1] 6 [8,5,3,4]
+
+[7] 2 [1] 6 [8] 5 [3,4]
+
+[7] 2 [1] 6 [8] 5 [3] [4]
+
+[2,7] [1,6] [8] 5 [3,4]
+
+[1,2,6,7] 8 [3,4,5]
+
+[1,2,3,4,5,6,7,8]
+
+Complexity : O(nlogn)
+
+3. Merge Sort
+data = [38,27,43,3,9,82,10]
+[38,27,43] [3,9,82,10]
+
+[38,27] [43] [3,9], [82,10]
+
+[27,38] [43] [3,9] [10,82]
+
+[27,38,43] [3,9,10,82]
+
+[3,9,10,27,38,43,82]
+
+
+Complexity:
+Best, Worst, Average caas --> O(n log n)
+
+
+
+4. Heap Sort -- After some binary tree concepts we shall revisit
+
+
+5. Jump Search -- Prerequisite -- Sorted order
+
+[5,10,15,20,25,30,35,40,45,50] --> 10
+ 0        2        5  6  7  8
+search_key = 40
+
+sqrt(10)---> 3
+
+sqrt(3) --> 1
+
+Jump and Binary 
+
+complexity of the Jump search O(sqrt(n))
+
+
+Trees
+-----
+Tree is a non linear datastrcutre which represents the hierachy of data
+Terminology
+
+1. Node ---> A single lement in the tree that holds the data
+
+2. Root ---> Top most node which has no predecesor or parent
+
+3. Leaf Node ---> These are also terminal nodes , a node which has no successors
+
+4. Intermediate nodes --> nodes which are in between root and leaf
+
+5. parent / child -->  a node which is emerging from another node is child
+                        a node has a child is parent
+
+6. sub tree --> A tree formed by any set of nodes and its decendents
+
+7. Height ---> Longest Path from root to a leaf
+
+8. depth --> deistance from root to node
+
+
+Diff Types of Trees
+--------------------
+1. BinaryTree -- Each nodes has at most 2 children
+
+2. Binary Search Tree --It is also a binary tree but follows  a pattern
+		left child values <= root <= right child values
+
+3. Balanced Tree  -- height diff between left and right subtrees is minimal
+		     (optimally zero)
+
+4. AVL Tree -- Self balancing BST
+5. Heap Tree    
+		in a binary tree where Parent >= children  ( Max Heap tree)
+		parent <= children (Min Heap Tree)
+
+6. N-ary Tree -- A node that have more than 2 children
+
+
+7. B-Trees or B+Trees   - Tree structures used in Database File Systems
+
+
+8. Prefix trees or Trie trees --> Used to store strings like dictionaries
+
+
+Tree traversals
+--------------
+
+1. pre-order -- root to be visited and left and right child in order
+
+2. in-order
+
+3. post-order(
+
+
+Use cases for Binary Tree
+---------------------------
+
+1. folder stcuture
+2. organization hierarchies
+3. Priority Queues
+4. Expression Parsing
+5. Routing tables
+6. Databases
+
+
+
+
+
+
+
