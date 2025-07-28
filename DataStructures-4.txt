@@ -146,7 +146,22 @@ Diff Types of Trees
 3. Balanced Tree  -- height diff between left and right subtrees is minimal
 		     (optimally zero)
 
-4. AVL Tree -- Self balancing BST
+Complexity  
+insertion,deletion,search -- O(log n) --Avg case, O(n) --> Worst case
+
+
+4. AVL Tree -- Self balancing BST, where the difference between the heights
+of the left and right subtrees(balance factor) for every node must be atmost 1
+
+to make any BST as AVL tree it will perform some rotations
+
+1. LL Rotation - Left Left case
+2. RR Rotation - Right Right case
+3. LR - Left Right
+4. RL - right left
+
+
+
 5. Heap Tree    
 		in a binary tree where Parent >= children  ( Max Heap tree)
 		parent <= children (Min Heap Tree)
