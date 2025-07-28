@@ -180,7 +180,7 @@ Use cases for Binary Tree
 5. Routing tables
 6. Databases
 
-
+9, 10, 50 
 
 
 
