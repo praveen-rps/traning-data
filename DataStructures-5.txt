@@ -1,0 +1,93 @@
+1. Prog Lang C++, Java, Python
+
+a+b ---> 
+
++ab---> invalid
+
+ab+ ----> invalid
+
+
+2. Operating System -- Linux process scheduling, virutal memory management
+
+3. Database Indexing ----> 
+
+4. file Systems
+
+5. Priority Queues
+
+6. Event Simuation
+
+7. compilers and symbol table
+
+
+key----> address1, address1
+
+key----> address
+
+
+Graph --> a graph is a non linear structure that consists of
+
+1. vertices (edges) -- A location or  point in a graph
+
+2. Edges (links) - A path connecting two edges or vertices
+
+G = (v,e)
+
+v = set of vertices
+e = set of edges
+
+
+Graph can have more than one path from one node to another node
+
+but trees will have only one path for any given two nodes
+
+Types of Graphs
+---------------
+
+1. Based on Direction - Undirected and Directed
+
+2. Based on Weight --> Weighted and Unweighted
+
+3. Based on Connectivity --> Connected or disconnected
+
+4. Based on Cycle ---> Contains at one loop(cycle) , if not loops (Aycylic)
+
+Graph Terminology
+-----------------
+1. Vertex ---> A point in the graph
+2. Edge ---> a path between two points or vertices
+3. Degree ---> Number of edges connected to a vertex
+4. Path ------> sequence of edges connecting the vertices
+5. Cycle ---> A path forming a loop if we start from one vertex should \
+   reach to the same after traversing
+
+5. Adjacenct Edges ---> if there is a path between any two consecutive vertices
+   then, both are adjacent to each other
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
