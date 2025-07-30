@@ -64,6 +64,151 @@ Graph Terminology
 5. Adjacenct Edges ---> if there is a path between any two consecutive vertices
    then, both are adjacent to each other
 
+A Graph can be represented using an Adjanency Matrix
+
+Vertices (A,B,C)
+
+Visit the nodes or I traverse the nodes
+
+1. DFS---> Depth First Search - Stack
+  	1. DFS starts at source vetex, visits a neighboutr, then recursively
+	   visits its neighbor and so on
+
+	2. if it reaches end, it backtracks to the previous vertex and explores
+	    the unvisited neighbors
+
+DFS uses a stack to backtrack
+
+2. BFS---> Breadth First Search -- Queue
+
+
+case-1 : Undirected Graphs
+
+Algorithm:
+
+1. Initialize the visited set
+2. for each univisited vetex, we will perform dfs
+3. in DFS,
+	
+	3.1 mark the current node as visitied
+	3.2 for each neighbour
+			if neighbour is not visited -> Recur for dfs
+			if visited and neighbour is not the parent -->Cycle
+4. if no cycle then return false else true
+
+
+case-2 : Directed Graphs
+
+
+Greedy Methods
+--------------
+That builds a solution step by step always by choosing the option which is
+best at that moment.
+
+pseduo code
+
+function Greedy(problem):
+	sort data based on greedy condition:
+	for item in sorted data:
+		if item can be added to solution:
+			add item
+	return solution
+
+Networking - Dijkstra's shortest path
+Graphs - Kruskal and Prim' min spanning tree
+Job scheduling with deadlines
+Knapsack problem
+Hufmann coding
+Disk Scheduling
+
+Advantages:
+
+1. Simple and fast
+2. Optimal for most problems
+3. less memory (No recursion)
+
+Limitations:
+1. May not suitable for all cases
+2. Problems must have the greedy choices
+
+
+Dijkstra's Alogrithm - Find the shortest path from the source node to all the other
+nodes in a weighted graph.
+
+Complexity : O(V+E) log V
+
+Kruskal's Alogorith
+===================
+
+Key Strategy
+-------------
+1. sort all the edges by increasing weight
+2. pick edges from the smallest one
+3. add this edge to mst only if it doesnot form a cycle
+4. repeat this unitl (v-1) edges in mst ( v = no of vertices)
+
+Applications
+------------
+1. Network design
+2. Roads 
+3. cluster analysis
+4. image processing
+
+Graph type used - undirected, conected, weighted
+strategy- greedy
+Ds - Disjoint set to find the cycle formation
+Time Complexity - O(E log E)
+
+
+Kruskals Min Spanning Tree
+
+
+Dynamic Programming
+-------------------
+It is a tecnhique used to solve complex problems by breaking down into simpler
+overlapping subproblems, solving each sub problem once and storing their
+results to avoid redudant work.
+
+
+It is best when the problem has
+
+1. Optimal sub structure 
+2. Overlapping sub problems
+
+
+1. Resource Allocations
+2. Longest common sub sequene  -- Optimzation of strings
+3. Shortest Path 
+4. Kanpsack problem
+
+5. Fibb, Naive recursions
+
+ex> Floyd-warshall Algorithm, Bellman-Ford Algorithm
+
+
+Alogrithm:
+
+for k in range(v):
+	for i in range(v):
+		for j in range(v):
+			if dist[i][k] + dist[k][j] < dist[i][j];
+				d[i][j]=dist[i][k]+dist[k][j]
+
+dist[i][j] --> shortest distance between i and j
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
