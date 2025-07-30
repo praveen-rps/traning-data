@@ -1,0 +1,70 @@
+A-1 --> C
+A-2 ---> B
+C-1 ---> B
+A-3 ---> C
+B-1 --->A
+B-2 -->C
+A-1 --> C
+
+n --> disks
+
+pow(2,n) -1
+63--->
+
+263 
+
+def towers(n, source,destination,auxilary):
+	if n==1
+	print(f"move from {soure} to {destination}")
+	else
+	towers(n-1,source,auxillary, destionation)
+	print("move disk {n} from {source} to {destination}")
+	towers(n-1, {auxillary}, {destination}, {source})
+
+
+towers(3,A,C,B)
+
+towers(2,A,B,C)--> towers(1,A,B,C) ---> move from A to C
+
+To find the shortest path from source to destination
+----------------------------------------------------
+
+A---traverse all other nodes ---> A
+
+1. Delivery route optimization
+
+2. Circuti Board drilling
+
+3. DNA Sequencing
+
+4. Ride Sharings
+
+
+
+Job Sequencing Algorithms
+--------------------------
+
+
+5sec---->
+
+j1(2)-->20, j2(2)-->60,j3(1), j4(3), j5(4)-----> 
+
+1 to n-1
+n=5
+for i in range(n)
+	for j in range (n-1-i)
+
+
+Algorithm
+----------
+
+1. sort jobs by decreasing order of profit
+2. for each joB schedule it to the latest available time slot before on its deadline
+
+3. if the slot is already filled, skip the job
+
+
+0/1 knapsack / fractional knapsack
+
+
+
