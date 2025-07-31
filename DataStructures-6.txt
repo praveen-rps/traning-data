@@ -67,4 +67,87 @@ Algorithm
 0/1 knapsack / fractional knapsack
 
 
+Algorithm for fractinal kanpsack problem
+----------------------------------------
+1. consider all the items with their weights and profits mentioned 
+
+2. calulate pi/wi of all the items in descending order based on their ratio
+
+3. without exceeding the limit, add the items into the knapsack
+
+4. if the knapsack can still store more weight, but the weights of the other
+   items exceed the limit, the fractional part of the next time can be added
+
+
+5. Hence giving it the name called franctional knapsack problem
+
+0/1 Knapsack Problem
+---------------------
+Brute Force Apporach
+
+1. calcuate the value of every possible comination of items in the knapsack
+2. discard the combinations that are heavier than the knapsack weight
+3. choose the combination of items with the highest value
+
+1. Top Down Approach
+2. Bottom Up approach
+3. Tabulation
+4. Recursive
+
+Pattern Matching Algorithm
+-------------------------
+1. Naive alogorithm
+
+given --> text with length n and a pattern with length m
+the task is to print all occurances of pattern in the text
+
+text = THIS IS A TEST TEXT
+pattern = "TEXT" ---> index =10
+pattern = "THIS" ---> index 0
+
+text = 'AABAACAADAABAABA'
+pattern = AABA --> index = 0
+
+Time complexity ---> O(n2)
+Best Case ----> O(n)
+
+KMP pattern Searching Algorithm
+-------------------------------
+Knuth- Morris - Prett
+
+txt
+
+pattern
+
+
+match
+
+LPS Array
+
+Proper suffix --> suffix is not equal to whole string itself.
+
+Suffix  -- A substring that ends at the current position
+
+Rabin -Karp Algorithm
+---------------------
+uses hashing to find the patterns in the text efficiently
+
+--> useful when wants to search multiple patterns in a text
+
+h(x) ---> y
+
+h(ABC)--> y
+
+65+66+67--> 198
+
+h(BCA) --> 198
+
+HELLO ABC and BCABC THIS A ABC PROGRAM
+
+ABC
+
+complexity -- Avg -- O(n+m)
+
+Worst case - O(n*m)
+
 

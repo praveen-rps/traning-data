@@ -1,0 +1,36 @@
+Horse has to cover all the squares in the given nxn square board wihtout
+leaving any square un attended
+
+(x,y) 8 possible positions
+
+(x+2,y+1)
+(x-2, y+1)
+(x+1, y+2)
+(x-1,y+2)
+(x+2, y-1)
+(x-2,y-1)
+(x+1,y-2)
+(x-1,y-2)
+
+Algorithms steps:
+
+1. start from an initial position (0,0)
+
+2. initialize a board with all values as -1 (unvisited)
+    array[8][8]
+
+3.set the starting positiion as 0 (first move)
+
+4. try all 8 possible moves from the current cell:
+	if the next cell in board is not visited, move there and incremement the
+	move count
+	recrusive with new position
+
+5. if all cells are visited ( move-count== n*n), print all the solution
+
+6. if move is not possible at any position, backtrack to previous move and chose     
+    another posistion and mark current one is unvisited
+
+Time Complexity 
+
+O(8*(n^2))
