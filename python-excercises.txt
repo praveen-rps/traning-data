@@ -1,5 +1,4 @@
 
-
 1. Given two lists: a = [1,2,3] and b = [4,5,6], merge them into [1,4,2,5,3,6].
 
 2.  Find Longest Sublist with All Distinct Elements
@@ -9,6 +8,7 @@
    Input: [4,4,1,2,2,2,3] → Output: [2,2,2,4,4,1,3]
 
 4. write a regular expression program to Extract all hashtags from a string
+   String = "Hello Welcome to #healthfy program which will give much #fitness"
 
 5. Write a program to Check if password is strong 
     (contains at least one uppercase, one lowercase, one digit, one special character)
@@ -21,22 +21,35 @@
 8. Merge two sorted lists into one sorted list without using sort()
 
 9. Check if two tuples are equal, ignoring order.
+   (1,2,3), (3,1,2) ---> both are equal
+
 
 10. Program to Count Vowels, Consonants, Digits, and Special Characters
 
 11. program to Check if a String is a Palindrome without using any 
     predefined methods
 
-12. Sort a list of tuples based on the second element of each tuple.
+12. Sort a list of tuples based on the second element of each tuple. (ascending
+    or descending any order you wish)
+    [(10,20),(1,3), (12,16), (7,9)]
+    ASC: [(1,3),(7,9),(12,16),(10,20)]
 
-13. Create a dictionary of students with roll number as key and marks as value. Then:
-
+13. Create a dictionary of students with roll number as key and marks as value. 
+     Then:
 	Print the student with highest marks
 	Find average marks
 	Search by roll number
+
 14. Write a program to find common elements in three sets
+   A = {1,2,3,}
+   B = {4,5,1}
+   C = {6,1,2,3} 
+   A ^ B ^ C = {1}
 
 15.  Given a list of numbers, find those that appear in only one of the two sets
+     [1,4,5,7,8,10]
+     {1,4,6,9}, {1,8,9,10}	
+    
 
 16. From a list of tuples, remove all duplicates considering reversed tuples as same.
     Example: [(1,2), (2,1), (3,4)] → Output: [(1,2), (3,4)]
@@ -44,11 +57,11 @@
 17. Given a paragraph, return the 3 most frequent words with their counts
 
 18.  Inventory Management to implement
-	List of items
-	Dictionary with item as key and stock/price as value
-	Set for out-of-stock items
+	(i) List of items
+	(ii) Dictionary with item as key and stock/price as value
+	(iii) Set for out-of-stock items
 
-19. Write any example program to implement method overriding
+19. Write any example program to implement method overriding in python
 
-20. Write any program to implement static concepts
+20. Write any program to implement static concepts in python
 
