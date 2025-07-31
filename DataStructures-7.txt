@@ -34,3 +34,161 @@ Algorithms steps:
 Time Complexity 
 
 O(8*(n^2))
+
+
+Rat in the a Maze Problem
+--------------------------
+Given N x N maze represented as a 2D grid, each cell has either 
+1 -->> indicates the path
+0 -->> indicates the block
+
+The rat starts at the top-left corner(0,0) and wants to reach
+the botto right corner (N-1,N-1)
+
+The goal is to find all possible ways that rat can go from source to destination
+
+
+Movement rules
+---------------
+1. move one square at a time
+possible moves for it is :
+
+Down --> D
+Left --> L
+Right --> R
+Up --> U
+
+Rat cannot revisit a cell
+
+
+Algorithm
+---------
+
+1. start at (0,0)
+2. Maintain:
+	path: string of moves made ("DDRDR")
+	visited: A matrix to mark all the visited nodes
+
+3. for each move:
+	3.1 Check if the next cell is within bounds, not visited and open(1)
+	3.1 if so mark as visited, append the direction to the path and recurse
+	3.2 after recursion, unmark visited cell 
+4. if destination is reached, store the path and print it
+
+
+N Queens Problem
+----------------
+
+1. place a queen row by row 
+2. for each row, try placing a queen in every column
+3. for each placement:
+	3.1 check if it safe
+		no queen in the same column		
+		no queen in the same row
+		no queen in left or right diagnols
+4. if safe, move to the next row
+5. if all rows are placed, store the positions
+6. Backtrack when placing is not possible
+
+
+Complexity --> O(n!)
+
+ x   x   x   x   x   Q   x   x 
+ Q   x   x   x   x   x   x   x 
+ x   x   x   x   Q   x   x   x 
+ x   Q   x   x   x   x   x   x 
+ x   x   x   x   x   x   x   Q
+ x   x   Q   x   x   x   x   x 
+ x   x   x   x   x   x   Q   x 
+ x   x   x   Q   x   x   x   x 
+
+
+ x   x   x   x   x   x   x   Q
+ x   x   x   Q   x   x   x   x 
+ Q   x   x   x   x   x   x   x 
+ x   x   Q   x   x   x   x   x 
+ x   x   x   x   x   Q   x   x 
+ x   Q   x   x   x   x   x   x 
+ x   x   x   x   x   x   Q   x 
+ x   x   x   x   Q   x   x   x 
+
+
+Subset Sum Problem
+-------------------
+
+Given a set of positive integers and a target sum, we have to determine
+if there is a subset whose sum equals to the target.
+
+list = [3,34,4,12,5,2,9]
+target = 9
+[4,5]---> 9
+[3,4,2]--->9
+
+We implement by using backtracking or recursive
+-----------------------------------------------
+target=15
+total = 7
+result = [5,2]
+
+Longest Common Subsequene (LCS) 
+----------------------------------
+
+X and Y --> find the longest subsequnce present in both of X and Y
+
+subsequence is a sequence that appears in the string relavtively in the same order
+but may not be continious
+
+
+X = "ABCBDAB" --> { "A","B","C","D","AB","BC","CB","BD","DA","ABC","BCA"....}
+ABB --> SUBSEQ
+BAB ---> SUBSEQ
+
+X = "ABCBDAB"
+Y = "BDCAB"  ---> 1+lcs(x-1,y-1,m-1,n-1)
+			1 + lcs(x-2,y-2,m-2,n-2)
+Alogorithm proces		1+
+-------------------			1+
+1. construct an empty adjancy table with sinze n,m
+
+4---> 
+
+Longest Increasing sub sequence
+--------------------------------
+Given an array of integers, we have to find the length of longest subsequnce
+such all elements of the subsequence are in increrasing order
+
+x = [10,22,9,33,31,50,41,60]
+
+(10,22)
+(9,33)
+(9,33,31)--> x
+(9,33,50) 
+(10,22,33,50)
+(10,22,33,50,60)-->valid
+
+Dynamic Programming
+-------------------
+define dp[i] as the length of the lis ending at index i
+
+for  i in 1 to n-1:
+	for j in 0 to i-1:
+		if a[i] > a[j]:
+		  dp[i]= max(dp[i], dp[j]+1)
+
+
+Complexity : O(n^2)
+
+Applications:
+-------------
+1. Longest carrer progression in profession
+
+2. stability analysis in time -series
+
+3. Game Score 
+
+4. Stock Market predictions 
+
+
+
+
+
