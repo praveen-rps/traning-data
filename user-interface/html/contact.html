@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Management - Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="container">
+    <div class="logo">RPS TravelMate</div>
+    <ul>
+      <li><a href="index.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="packages.html">Tour Packages</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>We’re here to help you plan your next adventure.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>Support</h4>
+        <p>Email: support@rpstravelmate.com</p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+      <div class="contact-card">
+        <h4>Sales</h4>
+        <p>Email: sales@rpstravelmate.com</p>
+        <p>Phone: +91 91234 56789</p>
+      </div>
+      <div class="contact-card">
+        <h4>Office Address</h4>
+        <p>123 Travel Street</p>
+        <p>Mumbai, India</p>
+        <p>PIN: 400001</p>
+      </div>
+      <div class="contact-card">
+        <h4>Follow Us</h4>
+        <p>Instagram: @rpstravelmate</p>
+        <p>Twitter: @rpstravelmate</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:1.5rem;">
+      <h3>Send a Message</h3>
+      <form onsubmit="return contactSubmit()">
+        <div class="form-group">
+          <label for="namec">Name</label>
+          <input type="text" id="namec" required />
+        </div>
+        <div class="form-group">
+          <label for="emailc">Email</label>
+          <input type="email" id="emailc" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TravelMate. All rights reserved.
+  </footer>
+
+  <script>
+    function contactSubmit() {
+      const name = document.getElementById('namec').value.trim();
+      const email = document.getElementById('emailc').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      if (!name || !email || !msg) {
+        alert('Please fill all fields.');
+        return false;
+      }
+      alert('Message submitted (demo).');
+      return false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,562 @@
+Java Script
+-----------
+
+
+HTML --- Template
+
+CSS ---- Design or Presentation
+
+JavaScript -- Action or Behaviour
+
+Java script is a high level interpreted programming lang that is meant for
+markup langs
+
+JavaScript runs in the browser ------> 
+
+dynamic behaviour of pages makes it more interactive
+
+
+characterists
+-------------
+1. Interpreted 
+
+2. dynamically typed - Variables can hold any type of data -types are checked at
+   runtime
+3. First class functions -- Functions can be passed as arguments to another function
+   and functions can also be returned and stored
+
+4. Event Driven -- action can be implemneted based on events
+
+5. Asynchronous operations ( callbacks, promises, async/wait)
+
+  sender ---------------------> receiver
+ 
+6. Fundation for many other UI tool, frameworks, libraries like - jQuery,
+   Vue, TypeScript, React, Angular , NodeJs
+
+
+Lang
+----
+
+Variables:
+
+let -- Block scoped and mutable
+const  -- block scoped and immutable reference
+var - function based and mutable
+
+
+let x = 10 ( x is an integer variable)
+x = 1000
+x = "Javascript"   x becomes an string type
+
+const y = 10  
+y =1000 ( Not Allowed)
+
+Scope 
+------
+Both are accessible in the defined block only
+block is represented with { }
+
+function sample()
+{
+      var z = 1000
+	
+	let x = 1000
+	{ 
+  		let x = 100
+  		const y = 200
+		console.log(z)
+		z = z+1
+	}
+	console.log(x)---> 1000
+	console.log(y)---> undefined
+	console.log(z)---> 1001
+}
+
+console.log(z) --> undefined
+
+Input and Output Statements
+---------------------------
+
+console.log() ---> used to write a content in the console of javascript
+document.write() --> write on the web page
+window.alert() -----> write a content on a seperate window and pops up to user
+innerHTML ---> is used to change the web page content dynamically
+
+<p>This is paragraph</p>
+
+Input methods
+-------------
+prompt() -- used to read the values from the input devices
+const name = prompt("Enter your name");
+
+HTML based UI elements can be used 
+
+comments 
+----------
+// --> single line
+
+/* multiline comment */
+
+Operators- All arthimetic, logical and relations operators in general high level
+lang, will supports in js
+
+
+Data Types
+----------
+1. String
+2. Number
+3. Boolean
+4. Date
+5. Symbol
+6. Object -- Pre defined or user defined obects
+7. BigInt
+
+
+control statements
+-------------------
+1. if , if else, nested if, else if ladder, switch
+
+2. Loops : for loop, for in , for of, while , do while
+
+while(cond){
+	statements;
+}
+
+do{
+	statemnets;
+}
+while(cond);
+
+
+for (init; cond; inc/dec){
+	statements;
+}
+
+for(let i =0; i<10; i++)
+   console.log("Hello")
+
+for of and for in -- are used to iterate on objects
+
+for (key in object){
+	statements;
+}
+
+
+let person = {fname:"John", lname:"Doe", age:25}
+text =" "
+for (let x in person){
+	console.log(person[x])
+
+John
+Doe
+25
+
+
+console.log(text)
+
+const numbers = [10,20,30,40,50];
+for(let x in numbers){
+	console.log(x)
+}
+0
+1
+2
+3
+4
+
+forEach()
+
+
+void fact(x){
+	int f=1;
+	for(int i =1 ;i<=;i++)
+		f = f*i;
+	print("The Factorial is : "+f)
+}
+
+list = [1,2,3,4,5]
+
+list.forEach(fact)
+
+The Factorial is : 1
+The Factorial is : 2
+The Factorial is : 6
+The Factorial is : 24
+The Factorial is : 120
+
+
+for - of -- > to iterate on iterables
+
+syntax:
+
+for (variable of iteratble){
+	statements;
+}
+
+names = ["Anil","Sunil","Suresh","Balu"]
+for (let x of names)
+	console.log(x)
+
+let text = "This is Javascript program"
+
+for(let x in text)
+	print(x)
+T
+h
+i
+s
+
+i
+s
+
+J
+a
+v
+a
+s
+c
+
+Uncondtional control statements: break, continue
+
+for of ---> iterables -- Array, String, List
+for in ----> Object ( this will take key and value pair)
+
+Functions
+----------
+
+userdefined functions -- defined by user
+pre defined functions -- defined by lang / js 
+
+syntax:
+-------
+
+function func_name(parameters){
+
+
+}
+
+
+
+func_name(arguments)
+
+function add(a,b){
+	
+	return a+b;
+}
+
+Parameters and arguments as synonyms
+
+Parameters ---> values listed in the function 
+a,b in the above example are parameters
+
+arguments --> values passed to function when called
+add(10,20) --> 10 and 20 are called arguments
+
+Arrow Methods 
+-------------
+ES6
+
+function add(a,b){
+	return a+b;
+}
+
+m = (a,b) => a+b 
+console.log(m(100,200)) // 300
+
+function sayHello(){
+	console.log("Hello, Welcome to Javascript");
+}
+
+greet = () => console.log("Hello, Welcome to Javascript");
+greet();
+
+function fact(n){
+	let f = 1;
+	for(let i = 1; i<=n;i++)
+		f=f*i
+	print("The factorial is "+f)
+}
+
+
+facotorial = n => {
+	let f = 1;
+	for(let i = 1; i<=n;i++)
+		f=f*i
+	print("The factorial is "+f)
+}
+
+console.log(factorial(6)) ;  --> 720
+
+map()
+filter()
+
+
+
+map()--> execute any give method on all the values
+filter() --> check any given condition and filter the values which statisfies
+
+const nums = [1,2,3,4,5]
+
+function square(n){
+	return n*n;
+}
+
+n => n*n
+
+const nums = [1,2,3,4,5]
+result = nums.map(n=>n*n);
+
+
+reduce()--> it is used to process elements in an array and reduces them to a
+single value
+
+reduce(callback, intitalvalue)
+
+callback --> function to execute on each element of an array
+
+intitalvalue -->optional value to store the initial value to start
+
+nums = [1,2,3,4,5]
+sums = (a,b) => a+b
+
+total = sums(1,2)
+total = sum(total,3) 
+total = sum(total,4)
+total = sum(total,5)
+
+result = nums.reduce((a,b) => a+b, 0);
+
+
+1. always we have to provide an intital value to the reduce method
+2. good for aggregation into a single value
+3. best to replace many for for loops
+
+Strings
+--------
+
+Strings are immutable
+string values are not modifiable in the same variable,
+every time when we modify the string a new object is created
+
+str = "Hello"
+str = 'Hello'
+str = `Hello` [template literal]
+
+name = "Kumar"
+city = "Hyderabad"
+
+console.log("Hello :"+name +" welcome to "+city)
+${}
+
+console.log(`Hello : ${name} welcome to ${city}`)
+Hello Kumar welcome to Hyderabad
+
+name[1]---> u
+city[7] ---> 8
+city[10] ---> Runtime Exception
+
+Methods in String
+------------------
+length--> "javascript".length ---> 10
+toUpperCase()
+toLowerCase()
+includes(str) ---> whether the str is a substring to given string
+startsWith(str) --> whether the str is starting with in the given string
+"java is a oops lang".startsWith("Java") --> false
+endsWith(str) --> whether str is the ending chars in the given string
+slice(m,n)--extracts chars from m to n-1
+substring(m,n) --> exctrats from m to n
+replace(old,new)
+trim() --> removing both leading and trailing spaces
+trimStart() --> remove the right spaces
+trimEnd() --> remove the left spaces
+
+Date
+----
+let today = new Date()
+console.log(today)
+
+Methods
+--------
+getFullYear()
+getMonth()
+getDate()
+getDay()
+getHours()
+getMinutes()
+getSeconds()
+getMilliSeconds()
+
+setter methods we can set the date object -- for all getter we have setter methods
+
+today.setFullYear(2030)
+setMonth()
+setHours()
+etc.,
+
+Formatting on Dates
+---------------------
+today.toString() ---> date format to string format
+today.toDateString() -> Sat Aug 02 2025
+today.toTimeString() --> 11:27:35 GMT+530
+today.toISOString() --> 2025-08-02T11:27
+today.toLocaleDateString() ---> 8/2/2025
+today.toLocaleTimeString() --> 11:29:00 AM
+
+
+Date Arthimetic:
+----------------
+
+today.getDate() + 1 ==> give tomorrow date
+today.getDate() -1 ==> gie yesterday date
+
+Array
+-----
+Array is a special object for storing ordered collection of values
+Arrays are indexed from zero to n-1
+arrays are mutable
+
+1. directly by intializing
+
+let names = ["Hari","Sunil","Krishna"]
+
+2. uew Array() constructor
+let names = new Array("Hari","Sunil","Krishna")
+
+3. Empty Array
+let names = []
+
+names[1]==> Sunil
+names[2]="Adhrit"
+names = ["Hari","Sunil","Adhrit"]
+
+Methods in Arrays
+------------------
+1. push(n) ---> push element at end
+2. pop() ----> removes the element at end
+3. shift() ---> remove from start
+4. unshift(0) --> add at start 
+
+splice and slice
+
+names = ["Hari","Sunil","Krishna","Mary","Ali"]
+
+names.splice(1,3,"Venkat","Hari")-- > ["Hari","Venkat","Krishna","Hari","Ali"]
+
+names.slice(1,3) --> extracts from 1 to (3-1) --> ["Venkat","Krishna"]
+
+forEach()
+map()
+filter()
+reduce()
+
+find()---> conditon need to given in array format
+
+joining() --> join elememnts with delimiter
+
+names.join("-")
+
+
+"Hari-Sunil-Krishna-Mary-Ali"
+
+sort() -->will sort the given values in the arrayand storesin the same array
+
+
+reverse() --> reverse the given order
+
+Object
+------
+In Javascript, an object is a collection of key and value pairs
+where keys are always strings or symbols
+and values can be any valid data type -- primitive data types, functions, arrays
+and other user defined objects
+
+Diff ways' to represent an object in JS
+
+1. literal notation
+
+let employee = {
+	name: "Krishna",
+	dept : "Finance",
+	desg: "Manager"
+}
+
+2. new Object()
+
+let employee = new Object();
+employee.name="Krishna"
+employee.dept = "Finance"
+employee.desg="Manager"
+
+3. function employee(name,dept,desg){
+	this.name=name;
+	this.dept=dept;
+	this.desg=desg;
+   }
+
+   let e1 = employee("Krishna","Finance","Manager")
+
+
+dot operator is used to access any element
+
+e1.name--> Krishna
+e1.dept ---> Finance
+e1.desg ---> Manager
+
+to add new key,value
+
+e1.salary=45000
+
+delete any property
+--------------------
+delete e1.salary;
+
+
+
+let employee = {
+	name: "Krishna",
+	dept : "Finance",
+	desg: "Manager"
+	display: function() {
+			cosole.log(this.name+" "+this.dept+" "+this.desg);
+	}
+}
+
+employee.display()--> 
+
+ES6 Syntax:
+----------
+
+let employee = {
+	name: "Krishna",
+	dept : "Finance",
+	desg: "Manager"
+	function display() {
+		cosole.log(this.name+" "+this.dept+" "+this.desg);
+	}
+}
+
+this -- this is a constant that refers to the current object in processing
+
+
+keys() ---> return all the keys
+values() --> return all the values
+entries() --> return all (key,value) pairs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+

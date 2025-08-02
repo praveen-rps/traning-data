@@ -1,0 +1,44 @@
+HTML - CSS - JAVASCRIPT
+
+Standalone --- HTML - CSS - JAVASCRIPT
+
+Web Applications -- React , Angular
+
+Distributed applications -- 
+
+
+Monolithic - HTML - CSS - JAVASCRIPT - single machine
+
+Microservices -- React (library), Angular(Framework)
+
+
+React and Angular -----> TypeScript
+
+Vue 
+
+NodeJS -- 
+
+jquery(js lib for ui animations)  ----------------> JavaScript
+
+TypeScript -------------> JavaScript (dynamic behaviour)
+
+
+JavaScript -->TypeScript, Vue, React, Angular, Nodejs, jQuery
+
+<table>
+	<tr>
+		<td>1</td>
+		<td>Sunil</td>
+		<td>30</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Suresh</td>
+		<td>40</td>
+	</tr>
+</table>
+
+
+
+
+
