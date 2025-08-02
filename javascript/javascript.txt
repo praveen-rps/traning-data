@@ -22,6 +22,7 @@ characterists
 
 2. dynamically typed - Variables can hold any type of data -types are checked at
    runtime
+
 3. First class functions -- Functions can be passed as arguments to another function
    and functions can also be returned and stored
 
@@ -495,7 +496,7 @@ employee.desg="Manager"
 	this.desg=desg;
    }
 
-   let e1 = employee("Krishna","Finance","Manager")
+   let e1 = new employee("Krishna","Finance","Manager")
 
 
 dot operator is used to access any element

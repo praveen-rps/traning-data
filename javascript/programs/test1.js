@@ -39,3 +39,15 @@ console.log(nums.sort((a,b)=>b-a))
 
 //window.alert("This is a window alert");
 //document.write("This will be written on document");
+
+function employee(name,dept,desg){
+	this.name=name;
+	this.dept=dept;
+	this.desg=desg;
+}
+
+   let e1 = new employee("Krishna","Finance","Manager")
+   console.log(e1)
+
+   // int x;
+   //sop(x)
