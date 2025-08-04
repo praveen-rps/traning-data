@@ -544,13 +544,196 @@ this -- this is a constant that refers to the current object in processing
 keys() ---> return all the keys
 values() --> return all the values
 entries() --> return all (key,value) pairs
+Event Handling
+--------------
+
+Event - An event is an action or occurence detected by the browser 
+
+mouse click
+key press
+page loading
+on mouse over 
+on mouse left
+
+
+
+to implement the dynamic behaviour, DOM Programming Interface
+
+Document Object Model
+
+<html>
+	<head> 
+		<script> </script>
+	</head>
+	<body>
+		<div>
+			<p></p>
+			<h2></h2>
+		</div>
+		<p>  </p>
+	</body>
+</html>
+
+An inverted tree in the browser ---> elements on the browser in the runtime
+
+
+How to access the elements from the tree
+---------------------------------------
+
+
+Methods to find the reference of tags
+
+
+1. getElementById(id)
+
+2. getElementsByTagName(tag)
+
+3. getElementsByClassName(classname)
+
+Chaging hte HTML properties
+------------------------
+innerHTML = change the content of html tag
+<p>hello</p>-->x.innerHTML = 
+
+element.attribute = new value
+<img src="c://image1.jpg" />
+
+
+element.sytle.property = new_value
+
+<p style="color:blue">This will be in blue color </p>
+
+x.style.color=red
+
+element.setAttribute(attribute,value)
+x.setAttribute("align","right")
+
+<p style="color:blue" align="right">This will be in blue color </p>
+
+
+
+Methods for manipulation of nodes
+--------------------------------
+
+1. createElement(element)
+2. removeElemenmt(element)
+3. appendElement(element)
+4. replaceChild(new,old)
+
+
+1. India
+2. China
+3. Japan
+4. America
+
+Enter a new country : America
+
+click on submit 
+
+
+synchronous and blocking
+
+Asynchronous and non blocking
+
+
+1. CallBacks
+
+2. Promises
+
+3. Aysnc /Wait
+
+client will get a response from the server 
+
+
+Callback is a function passed as an argument to another function, which
+is called later when the asynchronous task is done.
+
+
+
+function1 ----> function2
+
+
+function fetchData(callback){
+	console.log("Fetching data");
+	setTimeout( ()=> {  
+		const data = {id:1, name:"Bob"}
+		callback(data)
+		}, 2000 );
+	}
+fetchData(function(result) {
+	console.log("Data Received :",result);
+});
+
+
+Promises
+--------
+1. pending (data is still processing)
+2. fulfilled -- (completed or resolved)
+3. rejected --(error)
+
+
+async / wait --> functional programing
+
+increases of flexibility of using the promise funcionality in another way
+
+
+
+function delay(ms){
+	return new Promise(
+	resolve => setTimeout( () => resolve("Waited and completed"), ms),
+	error => reject("Error fetching data");
+	);
+}
+
+async function delay(ms){
+
+	console.log("start");
+	const result = await delay(1000);
+	console.log(result);	
+	console.log("end");
+}
+
+
+sequnetial async call
+
+
+async function task1(){
+	const first = await delay(500);
+	console.log("First job done", first);
+	const second = await delay(1000);
+	cosole.log("Second done",second);
+	const third =  await delay(200);
+	console.log("Thrid done:",thrid);
+}
 
 
 
 
+AJAX
+----
+Asynchronous 
+Javascript
+And
+XML
+
+ajax is a technique for making asynch http requests from clients (browser) to a
+server without reloding the entire page
+
+it is more useful
+1. when we update the part of the page
+2. when there are more data to be displayed
 
 
+client -------->sends a request to server 
 
+
+1. client trigger an event
+2. js creates XMLHttpRequest this object is used to fetch the data from url
+3. xhr sends a requestto the server based on request method
+4. server process the request and send back a response object
+
+5. response data is received by js and updates only the DOM which has effected
+   but not the complete page
 
 
 

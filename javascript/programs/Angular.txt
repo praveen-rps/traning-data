@@ -1,0 +1,118 @@
+Normal Web Applications
+
+1. every time when we send a request the it loads a new html page for every
+   request
+
+2. slows down the application
+
+
+
+SPA (Single Page Applications)
+
+total application is build with only one page -- when the applicatio is loaded
+it will load total appliation once -- components
+
+only the specific parts which are affected or need to change only those parts 
+are modified
+
+
+Angular is a typescript based front end framewor for developing single page application
+this is managed by google.
+
+
+Angular is used to build SPA that are dynamic, fast and responsive
+
+2010 --> AngularJs
+
+Angular 16,17 and 18---> standard versions for developing spa
+
+
+What are the features of angular
+-------------------------------
+
+1. re usable component based arch
+2. Two way binding -- automatically sync between data and UI
+3. DI (Dependency Injection) -better modularity and testing
+4. Builtin routing - easy to navigate between the components
+5. Reactive Programming -- async processing
+6. cross-platfrom -- works for web, mobile and desktop
+
+
+to install angular
+
+npm install -g @angular/cli --> install automatically the latest version
+
+npm install -g @angular/cli@18 --> to install version 18 only
+
+to create a new project
+
+ng new <projectname>
+ng new demoproject
+
+after project is created, open the project in the ide
+
+go to terminal in the ide
+
+ng serve (to start the application / project)
+
+angular.json -- central configuration file for the angular workspace
+
+package.json -- list all the dependenies required for our applications
+
+tsconfig.json ---> typescript compiler options for the whole projet
+
+
+Module is a container for diff parts of an applications -- components, services
+
+
+App is the default module and it contains the default files like:
+
+1. app.ts
+2 app.spec.ts
+3. app.html
+4. app.css
+
+
+login.ts
+login.html
+
+to create components:
+
+ng g c <componentname>
+ng g c login
+
+login.ts
+login.html
+login.css
+login.spec.ts
+
+@Comonent
+class App{
+
+
+}
+Data Binding is the mechanism that synchronzies the data between 
+the component class(.ts class) and template (html)
+
+
+1. one way binding  - If there is a change in component that will reflect in 
+                      template and vice versa is nt true
+
+   ex> interpolation, --> {{}}
+
+	property binding - Process of binding a value from class component
+	to the arg of the html tag []
+
+	event binding - It catches user or dom events and calls a component ()
+
+2. two way binding - If there is a change in component that will reflect in 	
+		template and vice versa also true
+
+	[(ngModel)]="property"----> FormsModule
+
+
+Directives
+----------
+
+
+

@@ -1,0 +1,7 @@
+<h2>Login Page</h2>
+<form>
+Enter Login id : <input type="text" [(ngModel)]="username" value="" /><br>
+Enter Password : <input type="password" [(ngModel)]="passwd" value="" /><br>
+<button (click)="validate()">Login</button>
+</form>
+<div>Valid User : {{validUser}} </div>

@@ -1,0 +1,30 @@
+<p>toggle-button works!</p>
+
+<button (click)="toggle()">{{isOn?'Logout':'Login'}}</button>
+
+<ol>
+    <li *ngFor="let name of names" >
+        {{name}}
+    </li>
+</ol>
+
+<table border="1">
+    <tr>    
+        <td>EmpId</td>
+        <td>Name</td>
+        <td>Department</td>
+    </tr>
+    <tr *ngFor="let emp of employees">
+        <td>{{emp.empid}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.dept}}</td>
+    </tr>
+</table>
+
+Status of the page : 
+<div [ngSwitch]="status">
+    <p *ngSwitchCase="'loading'">Loading</p>
+    <p *ngSwitchCase="'completed'">Success</p>
+     <p *ngSwitchCase="'error'">ErrorStatus</p>
+      <p *ngSwitchDefault>Unknown Status</p>
+</div>

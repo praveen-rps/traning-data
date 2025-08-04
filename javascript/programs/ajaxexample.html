@@ -1,0 +1,32 @@
+<html>
+<head>
+
+</head>
+
+<body>
+	<button id="loaddata">Load Data </button>
+	<div id="data"></div>
+	<table>
+
+	</table>
+	<script>
+		var btn = document.getElementById("loaddata");
+		btn.addEventListener("click", function(){
+			let xhr = new XMLHttpRequest();
+			xhr.open("GET","https://jsonplaceholder.typicode.com/users/2",true);
+			
+			xhr.onload = function(){
+			if (xhr.status === 200){
+				let user = JSON.parse(xhr.responseText);
+				document.getElementById("data").innerHTML = 
+				`<h2>Id: ${user.id} and Name: ${user.name}</h2>` 
+			}
+			else
+				console.log("Fetch Error");
+			}
+		
+		xhr.send();
+		});
+	</script>
+</body>
+</html>
