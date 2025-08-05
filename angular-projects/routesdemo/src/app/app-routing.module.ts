@@ -5,11 +5,13 @@ import { DisplayComponent } from './display/display.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RegisterComponent } from './register/register.component';
+import { ProductdetailComponent } from './productdetail/productdetail.component';
 
 const routes: Routes = [
   {path:"", component:LoginComponent},
   {path:"login", component:LoginComponent},
   {path:"display", component:DisplayComponent},
+  {path:"display/:id", component:ProductdetailComponent},
   {path:"addproduct", component:AddproductComponent},
    {path:"register", component:RegisterComponent},
   {path:"**", component:PagenotfoundComponent},

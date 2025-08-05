@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RegisterComponent } from './register/register.component';
+import { ProductdetailComponent } from './productdetail/productdetail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { RegisterComponent } from './register/register.component';
     AddproductComponent,
     LoginComponent,
     PagenotfoundComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductdetailComponent
   ],
   imports: [
     BrowserModule,
