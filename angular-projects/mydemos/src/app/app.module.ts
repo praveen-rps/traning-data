@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ToggleButtonComponent } from './toggle-button/toggle-button.component';
+import { ProductlistComponent } from './productlist/productlist.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToggleButtonComponent
+    ToggleButtonComponent,
+    ProductlistComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

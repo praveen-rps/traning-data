@@ -113,6 +113,14 @@ the component class(.ts class) and template (html)
 
 Directives
 ----------
+Builtin directives
+	*ngIf, *ngFor, *ngSwitch, *ngSwitchCase, *ngSwitchDefault
+	ngClass 
+	ngStyle
+
+
+
+userdefined directives
 
 
 
