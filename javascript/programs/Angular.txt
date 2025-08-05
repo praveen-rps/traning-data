@@ -92,7 +92,7 @@ class App{
 
 }
 Data Binding is the mechanism that synchronzies the data between 
-the component class(.ts class) and template (html)
+the component class(.ts class) and template (.html)
 
 
 1. one way binding  - If there is a change in component that will reflect in 
@@ -121,6 +121,59 @@ Builtin directives
 
 
 userdefined directives
+
+
+Data Sharing
+-------------
+
+1. Parent to child
+
+2.child to Parent
+
+3. sibling(child) to sibling (child)
+
+
+<app-root>
+	<app-toggle-button></app-toggle-button>
+</app-root>
+
+<register></register>
+<loans></loans>
+
+
+@Component(
+	selector:app-loan
+	templateUrl:.\app-loan.html'
+	styleUrl:''\app-loan.css'
+)
+export class Loans{
+
+
+
+
+}
+
+class CreditCard{
+
+
+}
+
+@Override -- Annotations
+
+@Input 
+@Output
+
+These decorators give a child component a way to communicate with its
+parent component.
+
+@Input() lets a parent component update data in the child component
+
+@Output() lets the child send data to a parent component
+
+
+dashboard(parent) ----> product (child)
+products-------------------> 
+
 
 
 

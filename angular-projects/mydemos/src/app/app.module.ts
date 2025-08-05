@@ -8,6 +8,7 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ChildComponent } from './child/child.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule
 
   ],
   providers: [],
