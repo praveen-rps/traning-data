@@ -1,5 +1,4 @@
-<p>List of available products</p>
-
+<!--
 <ul>
     <li *ngFor="let product of products">
         {{product.id}}:{{product.name}}:{{product.price}} - <button (click)="view(product.id)">
@@ -7,3 +6,24 @@
         </button>
     </li>
 </ul>
+-->
+
+<div class="container mt-5">
+    <h2 style="color:blue; text-align:center;">Product List</h2>
+    <table class="table table-bordered table-striped">
+        <thead>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td><button class="btn btn-primary" (click)="view(product.id)">view</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

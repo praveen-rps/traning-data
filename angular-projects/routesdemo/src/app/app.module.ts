@@ -8,7 +8,7 @@ import { AddproductComponent } from './addproduct/addproduct.component';
 import { LoginComponent } from './login/login.component';
 //import { Routes } from './app-routing.module';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RegisterComponent } from './register/register.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
@@ -25,7 +25,8 @@ import { ProductdetailComponent } from './productdetail/productdetail.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

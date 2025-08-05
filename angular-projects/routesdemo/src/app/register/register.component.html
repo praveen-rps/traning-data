@@ -1,1 +1,26 @@
-<p>Dear user you are not registered, please register first..!</p>
+<h2>Product Registration Form</h2>
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+<label>Enter Product Id</label>
+<input type="number" formControlName="id" />
+<div style="color:red" *ngIf="productForm.get('id')?.invalid && productForm.get('id')?.touched">
+    Product ID is required
+</div><br><br>
+
+<label>Enter Product Name</label>
+<input type="text" formControlName="name" />
+<div style="color:red" *ngIf="productForm.get('name')?.invalid && productForm.get('id')?.touched">
+    Product Name Min 2 characters required
+</div><br><br>
+
+
+
+<label>Enter Product Id</label>
+<input type="number" formControlName="price" />
+<div style="color:red" *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">
+    Product price cannot be negative or must be greater than 1
+</div><br><br>
+
+<button type="submit" [disabled]="productForm.invalid">Add Product</button>
+</form>
