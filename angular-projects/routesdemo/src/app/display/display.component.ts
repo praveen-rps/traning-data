@@ -16,10 +16,7 @@ export class DisplayComponent {
   }
 
   view(id:number){
-    console.log(id)
-    let product = this.products.find(p => p.id == id)
-    console.log(product.name);
-    this.router.navigate([`/display`, id]);
+      this.router.navigate([`/display`, id]);
     }
 
 }

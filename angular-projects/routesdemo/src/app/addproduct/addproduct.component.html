@@ -1,1 +1,14 @@
-<p>addproduct works!</p>
+<p>Product Registration</p>
+
+<form #productForm="ngForm" (ngSubmit)="addProduct()">
+Enter Product Id :<input type="number" [(ngModel)]="product.id" name="
+pid" required/><br>
+Enter Produt Name : <input type="text" [(ngModel)]="product.name" 
+name="pname" required/><br>
+Enter Produt Prie : <input type="number" [(ngModel)]="product.price" 
+name="price" required/><br>
+
+<button type="submit" [disabled]="!productForm.form.valid">Add Product</button>
+
+
+</form>
