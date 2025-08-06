@@ -18,7 +18,7 @@ Flask Core components
 
 2. @app.route() -- Decorator to define url routing
 
-3. request -- to access the data sent in http requests 
+3. request -- to access the data or methods sent in http requests 
 
 4. render_template() -- Render the HTML templates as response
 
@@ -27,4 +27,13 @@ Flask Core components
 6. redirect() -- redirects to diff route
 
 7.flash() -- display one time messages 
+
+
+To install the flask
+---------------------
+pip install flask
+
+
+
+
 
