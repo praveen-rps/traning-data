@@ -14,4 +14,8 @@ export class UserService {
   getUser(id:number) : Observable<User>{
     return this.http.get<User>(this.url+id)
   }
+
+  multiply(a:number, b:number):number{
+    return a*b;
+  }
 }

@@ -176,4 +176,60 @@ products------------------->
 
 
 
+Routing
+--------
+Process of navigating between the components
+
+RouterModule
+Routes-array of objects defining the paths
+ActivatedRoute - Injected into routed components to access params, query params
+etc.,
+
+RouterLink - to specify the path link for routing
+
+
+Path Parameters
+
+http://localhost:8081/items/1
+
+
+Form Handling
+-------------
+
+1. Template Drive Forms
+
+2. Reactive forms
+
+
+
+Advantages of Reactive Forms:
+
+1. code -driven 
+
+2. strong control on validations
+
+3. FormGroup, FormControl and FormArray -- Manging the core form functionalities
+
+4. dynamic data
+
+ReactiveFormsModule
+
+JSON - Java Standard Object Notation
+
+{
+   "name":"Hyderabad"
+   "mamax": 40,
+
+
+
+
+
+
+
+
+
+
+
+
+
 
