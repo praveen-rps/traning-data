@@ -1,27 +1,25 @@
-import { TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
-  }));
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
+describe('GreetingComponent', ()=>{
+  let component : AppComponent;
+  let fixture : ComponentFixture<AppComponent>;
 
-  it(`should have as title 'testingdemo'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('testingdemo');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+  beforeEach(()=>{
+    TestBed.configureTestingModule({
+      declarations :[AppComponent]
+    }).compileComponents();
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('testingdemo app is running!');
+
   });
-});
+
+  it('should return the msssage', ()=>{
+    const result = component.greeting('Anil');
+    expect(result).toEqual("Hello Anil Welcome to Angular Testing")
+  });
+
+});  
+
