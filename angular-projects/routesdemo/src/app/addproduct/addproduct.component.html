@@ -1,12 +1,24 @@
 <p>Product Registration</p>
 
 <form #productForm="ngForm" (ngSubmit)="addProduct()">
-Enter Product Id :<input type="number" [(ngModel)]="product.id" name="
-pid" required/><br>
-Enter Produt Name : <input type="text" [(ngModel)]="product.name" 
-name="pname" required/><br>
-Enter Produt Prie : <input type="number" [(ngModel)]="product.price" 
-name="price" required/><br>
+    <table class=".table-striped-columns">
+        <tr>
+            <td>Enter Product Id </td>
+            <td><input type="number" [(ngModel)]="product.id" name="
+pid" required/></td>
+        </tr>
+        <tr>
+            <td>Enter Produt Name </td>
+            <td><input type="text" [(ngModel)]="product.name" 
+name="pname" required/></td>
+        </tr>
+        <tr>
+            <td>Enter Produt Price </td>
+            <td><input type="number" [(ngModel)]="product.price" 
+name="price" required/></td>
+        </tr>
+    </table>
+
 
 <button type="submit" [disabled]="!productForm.form.valid">Add Product</button>
 
