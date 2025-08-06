@@ -1,0 +1,30 @@
+Flask
+------
+
+Flask is a micro web framework written in python for developing the rest based
+applications
+
+
+Features:
+1. Light Weight
+2. Flexible
+3. Modular
+4. Easy to implement
+5. Extensible
+
+Flask Core components
+---------------------
+1. Flask class -- Main class to create the application
+
+2. @app.route() -- Decorator to define url routing
+
+3. request -- to access the data sent in http requests 
+
+4. render_template() -- Render the HTML templates as response
+
+5. url_for() -- used to build url for routes
+
+6. redirect() -- redirects to diff route
+
+7.flash() -- display one time messages 
+

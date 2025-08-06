@@ -220,7 +220,55 @@ JSON - Java Standard Object Notation
    "name":"Hyderabad"
    "mamax": 40,
 
+}
 
+Unit Testing in Angular
+-----------------------
+Testing is the process of finding the erros
+1. White Box Testing - testing performed on code
+   Ensure the quality at unit level
+   if (a<b)
+  { 
+    if( c <d)
+	{	
+	   s1
+	   s2
+	}
+     else{
+	s3
+	s4
+     }
+  }else{
+	if(d<a)
+	{
+		s5
+		s6;
+	}
+	else
+	{
+		s7
+		s8
+	}
+}
+
+DevOps - Automation - our testing should be done in automatically
+
+   
+
+2. Black box testing - testing performed on product
+   this is to ensure the quality - 
+   we will be testing the functionality 
+
+
+Python - PyTest
+Angular - karma and Jasmine, Mocha and Chai
+
+1. Ensures code be have as expected
+2. Makes our application robust
+3. Simplifies the debugging
+4. Improves maintainablity
+
+Two frameworks for nodejs 
 
 
 
