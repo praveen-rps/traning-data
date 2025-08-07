@@ -7,7 +7,7 @@ import { User } from './user';
   providedIn: 'root'
 })
 export class UserService {
-  private url = "https://jsonplaceholder.typicode.com/users/"
+  private url = "http://localhost:5000/users/"
 
   constructor(private http:HttpClient) { }
 
