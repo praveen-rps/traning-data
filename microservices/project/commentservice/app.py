@@ -19,8 +19,10 @@ def add_comment():
     db.session.commit()
     return jsonify({'message':'Comment added'}), 201
 
+#http://localhost:5002/comments/postid/1001
 @app.route("/comments/postid/<int:pid>")
 def get_comments_for_postId(pid):
+    print("Inside the comments servie")
     data = Comment.query.filter_by(postid=pid).all()
     result = []
     for d in data:
