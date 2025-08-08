@@ -1,0 +1,75 @@
+
+
+Application - development arch - two types
+
+1. Monolithic Arch -- where the total application services are developed
+as modules and integrated as one single executable jar and deploys in the
+single server
+
+all the request for any of the service will go the same server
+
+Disadvantages or limitations of monolithic
+
+1. large code base
+2. Deployment - continous integration
+3. scalability - scale as whole
+4. Technologoy stack
+5. Failures - if one of the service is down then total application will go down
+6. debugging is difficult 
+
+
+2. Microservices - Address all the problems of monolithic
+
+"Microservices is an architectural style where a large application is built 
+as a suite of small independent and loosely coupled services, where each service
+is developed and deployed independently and they will commuicate over network
+using http protocols and web services(REST/SOAP)"
+
+Characteristics of Microservices
+---------------------------------
+
+1. Single Responsibility
+2. Decentralized Data
+3. Independent Deployment
+4. Failures Isolation
+5. Communication - REST or Message Queues
+
+Challenges in Microservices
+----------------------------
+1. complexity of managing services
+2. Data consistency
+3. gateway
+4. latency
+5. distributed debugging
+
+
+Post- Service
+-------------
+
+1. adding a post
+2. deleting a post
+3. displaying all posts
+4. get all comments for given post
+posts(postid, author, title, desciption)
+
+1001,kumar,science,today's ai is ruled out all traditional jobs
+1002,sunil,politics, though politics are not good but we need it
+
+
+
+
+comment-service
+----------------
+1. adding a comment
+2. deleting a comment
+3. displaying all comments
+4. get all comments for a given post
+comments(cid,commenter,comment,postid)
+
+9001,raju,though ai is doing all jobs but final decision should be manual,1001
+9002,krishna, we have to use ai tools to sustain in market, 1001
+9003,raju,in today's no good politician exists,1002
+
+
+
+
