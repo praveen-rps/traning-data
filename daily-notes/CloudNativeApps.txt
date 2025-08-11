@@ -98,14 +98,53 @@ docker rmi <imagename/id> -- to remove a image
 docker pull <imagename> -- to pull or download an image from registry(dockerhub)
 
 
+docker run -d -i -t -p host:continer --name <containername> <imagenamge/id>
 
+docker stop <containername/id>
+
+docker exec - used to go inside the container
+
+docker exec -it <containername> /bin/sh
+
+docker logs <containername>
+
+docker inspect <conatinername>
+
+
+docker push <account:image>
 
 
 
 2. Docker File Commands- commands used to create the docker images
 
+FROM - to represent a base image
+
+FROM <imagename>
+
+MAINTAINER - to represent the author (doc'spurpose)[optional]
+
+ADD <source/file/> <dest/container> - copy the contents from host to container
+add c://f1.txt /temp
+
+it copy from source to container
+it can download from the url and add to container
+it can unzip a zip file and add to container
 
 
+COPY <SOURCE/FILE> <dest/container>- copies the contents from host to container
+
+ADD http://url:799/ /temp  
+first unzip f1.zip and contents will be placed in /temp
+
+copy f1.zip /temp --> just copies the zip file to /temp
+
+run -- used to execute any valid linux command
+cmd -->used to start any service when the container is tated
+
+user 
+volume -- volume mounting
+env
+workdir
 
 
 
