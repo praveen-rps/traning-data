@@ -1,0 +1,115 @@
+Executable format for the apps to deploy
+
+Server --A a software which provides resoures, data, services or programs to
+another clients / machines. 
+
+This will be responsbile for the requests and response processing
+
+
+Web Servers -- General purpose servers that can host applications of any
+lang and uses only http or https protocol for communication
+
+ex> Tomcat, GlassFish, IIS, Apache HTTP
+
+Application Servers -- Also servers can host applications of any specific
+lang and delivers application data to clients
+
+Ex>WebLogic, IBM Web Sphere
+
+convert the application program into python executable format and deploy it
+
+increasing the number of instances of the same application
+
+The application which is running fine in the Dev env may not run exactly in
+the prod env, due to many reasons like conf or arch or env mismatch
+
+Waterfall , Agile , DevOps
+
+DevOps -- Will make automation process of the workflow
+
+
+Continious Integration
+Continious Deploment
+
+CI / CD
+
+
+Docker Arch
+
+1. client  --- place where all the docker commands are exeuted
+	        it will act as an interface between user and docker 
+
+2. deamon / engine -- Which is responsible for commands execution
+
+3. index / registry -- Storage (the memory will be accessed only be docker)
+
+
+
+Docker Components
+-----------------
+
+1. Images -- Images are blueprint for containers
+
+
+
+2. containers -- runtime entites for the images
+
+
+3. Registries -- Public( Dockerhub) and Private
+
+
+
+
+
+Object Oriented
+----------------
+
+Class ----> x1, x2, and f1() method (blue print or template for objects)
+
+
+
+Object is the real time entity
+
+Human beings -----> you me and your felow friends
+
+
+Objects occupy some memory ----> Primary Memory 
+
+
+Docker commands
+---------------
+
+1. Docker Management Commands - Manage docker images and containers
+
+docker --version - used to display docker version installed 
+
+docker images  -- used to see all images in the machine
+
+docker ps - used to display all the running containers
+
+docker ps -a : used to display all running and stopped containers
+
+docker run -d <imagename/imageid> - to create a new container from the image
+
+docker rm <containerid/name> -- to remove a container
+
+docker rmi <imagename/id> -- to remove a image
+
+docker pull <imagename> -- to pull or download an image from registry(dockerhub)
+
+
+
+
+
+
+2. Docker File Commands- commands used to create the docker images
+
+
+
+
+
+
+
+
+
+

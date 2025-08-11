@@ -70,6 +70,32 @@ comments(cid,commenter,comment,postid)
 9002,krishna, we have to use ai tools to sustain in market, 1001
 9003,raju,in today's no good politician exists,1002
 
+Flask-RESTFul
+
+is an extension to flask that helps us to build rest api's quickly and
+cleanly
+
+1. Maps http methods to python methods
+
+2. Responses are returned as json
+
+3. More organized routes
+
+4. Support request data parsing
+
+
+
+GET ---Retrieve Data from service
+
+POST -- Send data to Service
+
+PUT -- update some data from service
+
+DELETE - delete some data from the service
+
+
+
+
 
 
 
