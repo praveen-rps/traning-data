@@ -1,0 +1,40 @@
+
+
+docker run -dit --name my-mysql2 -v sqldata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root -p 3308:3306 mysql:latest
+
+
+Bank
+
+1. Loans  ------------------> Loanimage ----> loanscontainer --docker run
+
+2. CreditCard --------------> CCImage-------> CreditCardContainer -- docker run
+
+3. Savings------------------> SavingsImages ----> SavingsContainer --docker run
+
+docker stop loanscontainer
+
+docker stop Creditcardcontianer
+
+docker stop savingscontainers
+
+
+docker-compose --- is a tool for managing the containers
+1. start 
+2. stop
+3. build
+4. restart
+5. dependency management
+6. env variable setting
+
+
+yml or yaml ---> yet another markup language
+
+docker-compose up -d [ to start all the containers created by docker-compose]
+docker-compose down [ to stop and remove all the containers creted by docker-compose]
+docker-compose up -d --scale <servicename1>=<replicanumber> --scale <servicename2>=<replicanumber>
+
+
+
+
+
+

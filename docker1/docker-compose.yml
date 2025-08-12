@@ -1,0 +1,42 @@
+services:
+    dbservice:
+       image: mysql:latest
+       container_name: mysqldb
+       environment: 
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: testdb
+          MYSQL_USER: root
+       ports:
+          - "3307:3306"
+    monolith:
+       image: boorkcrudimage
+       #container_name: bookmonolith
+       #build:
+	  #context: d://dockerfiles/monolith/
+	  #dockerfile: Dockerfile
+       ports:
+          - "5001-5005:5000"
+       depends_on:
+          - microservices
+       volumes:
+          - .:/tmp
+       networks:
+          - mynetwork
+       
+    microservices:
+       image: flaskrestimage
+       #container_name: restmicroservice
+       #build:
+	  #context: d://dockerfiles/restapp/
+	  #dockerfile: Dockerfile
+       ports:
+          - "5006-5011:5000"
+       volumes:
+          - .:/tmp
+       networks:
+          - mynetwork
+    
+networks:
+    mynetwork:
+          driver: bridge   
+       
