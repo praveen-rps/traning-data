@@ -18,6 +18,7 @@ services:
           - "5001-5005:5000"
        depends_on:
           - microservices
+	
        volumes:
           - .:/tmp
        networks:
