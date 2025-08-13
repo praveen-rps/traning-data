@@ -1,0 +1,18 @@
+
+
+1. Checkout from the github
+
+2. Generate the executable file for the project
+	2.1 go the source code directory (CD)
+	2.2 run the build command - ng build --configuration production
+	2.3 dist/<project-name>
+
+
+3. Write the docker file to copy the build to the container (image)
+	3.2 Write the docker file to create the image
+	from nodejs
+	copy executable to container
+	run the executable file using ng
+
+4. run the container 
+	4.1 run the docker image to get the container up and running

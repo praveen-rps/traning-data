@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-rest
+spec:
+  selector:
+    app: flask-rest
+  ports:
+    - protocol: TCP
+      port: 5010
+      targetPort: 5010
+  type: NodePort

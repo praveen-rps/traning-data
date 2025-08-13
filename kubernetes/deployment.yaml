@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-rest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 
+  template:
+    metadata:
+      labels:
+        app: flask-rest
+    spec:
+      containers:
+      - name: docker1-microservices-1
+        image: flaskrestimage
+        ports:
+        - containerPort: 5010
