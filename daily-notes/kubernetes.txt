@@ -1,0 +1,106 @@
+Kubernetes (k8s)
+-----------------
+
+k8s is an open source container management platform that automates the
+deployment, management and scaling of conatiner based applications in
+diff kinds of environments like physical, virtual and cloud native computing 
+foundations
+
+
+cluster - is a collection of nodes
+
+node is phyical or virtual machines in the deployments are done
+
+one node is desginated as master and n-1 nodes are called worker or slave nodes
+
+
+master node ---> API Server, Controller Manager, Scheduler, etcd (control plane)
+
+API Server - Acts as an entry point for all the commands or communications
+             All components will communicate through this comopnent
+
+etcd -- a kind of database storage
+        a distributed key,value store that stores the entire cluster information
+
+contoller -manager - 
+1. watches the node health
+2. scaling
+3. replications set
+4. endpoint controlling
+
+
+5. cloud controller Manager --- to interact with the cloud env
+
+
+scheduler -- 
+assigns pods to noeds based on
+
+	1. resource availablity
+	2. contraints	
+	3. policies
+	4. rules
+
+
+worker node --->  Kubelet, kubeproxy, pods
+
+pods ---> Containers and containr runtime actual deployable unit
+
+node is a collection of pods
+pod is a collections of containers
+CRI -- container runtime env, where all the pods will run
+
+kubelet -- agent runs in worker to talk to api-server 
+ensures containers described in pod specs are running
+
+kube-proxy- manges networking rules on nodes
+forward request to the correct pod through masters
+
+
+1. Deployment---> to deploy our conatiner in the pod
+   angularrest (deployment.yml)
+
+2. service ----. expose pods externally or internally
+   (service.yml)
+
+we combine both (deployment+service).yml
+
+
+
+kubectl set image deployment/angularrestdemo angularrestdemo=angularrestdemo:1.2
+kubectl rollout status deployment/angularestdemo
+
+
+Commands
+--------
+
+1. kubectl cluster-info  ( to check the cluster working status)
+
+2. kubectl get nodes ( to check the available nodes)
+
+3. kubectl apply -f deployment.yaml
+
+4. kubectl apply -f service.yaml ( this is to be executed only when both properties are not
+written in the deployment.yaml)
+
+Note: in our case exectute only kubectl apply -f deployment.yaml
+
+5. kubectl get deploy  ( to check the deployment info)
+
+6. kubectl get pods ( to check the pods in which containers are running)
+
+7. kubectl get svc ( to check the service info )
+
+open the browser and access localhost:<portgiveninservice>
+eg> localhost:30080
+
+
+8. kubectl delete -f deployment.yaml ( to delete the deployment and service)
+
+
+
+
+
+
+
+
+
