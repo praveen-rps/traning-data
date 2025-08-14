@@ -97,7 +97,8 @@ eg> localhost:30080
 8. kubectl delete -f deployment.yaml ( to delete the deployment and service)
 
 
-
+kubectl set image deployment/angularrestdemo angularrestdemo=angularrestdemoimage:1.1
+kubectl rollout status deployment/angularrestdemo
 
 
 
